@@ -24,8 +24,8 @@ Nachvollziehbare Grundlage vor Beginn der Implementierung schaffen.
 
 ### Prüfung
 
-Pflichtdateien, relative Markdown-Links, vollständige Dateiliste und Übereinstimmung der lokalen Dateien mit dem veröffentlichten Stand prüfen. Keine Anwendungstests, da noch kein Anwendungscode existiert.
+Geprüft: zehn Dateien im GitHub-Branch main vorhanden; acht lokale Markdown-Dateien mit null fehlenden relativen Markdown-Verweisen. Keine Anwendungstests, da noch kein Anwendungscode existiert.
 
 ### Bekannte Grenzen
 
-Frühere Git-Historie aus dem ZIP und PDF-Inhalte konnten nicht übernommen werden.
+Frühere Git-Historie aus dem ZIP und PDF-Inhalte konnten nicht übernommen werden. Die lokale Git-Verknüpfung scheiterte an einem Schreibzugriffsfehler im geschützten .git-Ordner trotz zusätzlich erteilter Berechtigung; lokale Dateien sind noch nicht als synchronisierte Git-Kopie nutzbar. Diese Einschränkung wurde in STATUS.md ergänzt.
