@@ -4,7 +4,9 @@ PrintPilot befindet sich am Projektanfang. Dieses Repository enthält die Grundl
 
 ## Projektziel
 
-Auf der zugehörigen Projekt-Page liegt eine Unterlage mit dem Titel „PrintPilot – KI-Prognose für den Filament-Bedarf“. Daraus ergibt sich eine vorläufige Richtung: KI-gestützte Prognose des Filamentbedarfs im 3D-Druck. Der Inhalt der PDF wurde noch nicht ausgewertet; konkrete Funktionen und Anforderungen sind offen.
+PrintPilot ist das 3D-Drucker-Gruppenprojekt von Carolin, Meik, Tamas und Lilia im Kurs. Ziel ist eine bessere Planung des Filamentbedarfs: weniger unnötiger Lagerbestand und weniger Produktionsausfälle durch Materialmangel. Der Einkauf behält die Entscheidung über Bestellungen.
+
+Die Projekt-Page dient zur gemeinsamen Sammlung von Aufgaben und Ergebnissen. Die dort verlinkte PDF „PrintPilot – KI-Prognose für den Filament-Bedarf“ wurde noch nicht ausgewertet; konkrete Funktionen, Datenquellen und messbare Erfolgskriterien bleiben offen.
 
 ## Einstieg
 

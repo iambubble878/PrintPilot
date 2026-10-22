@@ -2,6 +2,17 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-22 – Projektkontext aktualisiert
+
+- README.md und docs/PROJEKTGRUNDLAGE.md: Team, Kurskontext, qualitative Ziele und Bestellverantwortung aus der aktuellen Projekt-Page übernommen.
+- TODO.md: Übernahme des Kontexts abgeschlossen; messbare Ziele und Einkaufsablauf als offene Aufgaben präzisiert.
+- MEMORY.md: bestätigte Angaben und den historischen Bezug auf den inzwischen entfernten Repository-Abschnitt klargestellt.
+- STATUS.md: Phase und Anforderungen auf den aktuellen Kenntnisstand gebracht.
+- CHANGELOG.md: diese Aktualisierung dokumentiert.
+- Grund: Die Projekt-Page enthält inzwischen konkrete Angaben, die in der ursprünglichen Repository-Dokumentation fehlten.
+- Prüfung: Aktuelle Page und GitHub-Ausgangscommit gelesen; PDF-Zugriff erneut geprüft (Format nicht unterstützt). Relative Markdown-Verweise geprüft: keine fehlenden Ziele. Keine Anwendungstests, da kein Anwendungscode geändert wurde.
+- Einschränkung: PDF-Inhalte bleiben unausgewertet; die lokale Git-Verknüpfung ist weiterhin offen.
+
 ## 2026-10-22 – Projektinitialisierung
 
 ### Hinzugefügt

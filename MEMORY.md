@@ -5,6 +5,10 @@ Stand: 2026-10-22
 ## Bestätigt
 
 - Projektname: PrintPilot.
+- Laut aktueller Projekt-Page: Kursprojekt von Carolin, Meik, Tamas und Lilia zum 3D-Druck.
+- Ziele: Filamentbedarf besser planen, unnötigen Lagerbestand und Produktionsausfälle durch Materialmangel reduzieren.
+- Bestellentscheidungen verbleiben beim Einkauf.
+- Die Projekt-Page sammelt Aufgaben und Ergebnisse für den Gruppenüberblick.
 - Der Nutzer verlangt ein Repository sowie README.md, TODO.md, MEMORY.md, STATUS.md und CHANGELOG.md.
 - Jede Änderung soll dokumentiert werden.
 - GitHub-Konto: iambubble878.
@@ -21,10 +25,10 @@ Stand: 2026-10-22
 
 ## Quellen und Grenzen
 
-Die Projekt-Page beschreibt einen früheren lokalen Start mit Commit 0762511 und ZIP-Anhang. Im aktuellen Arbeitsordner waren keine Dateien vorhanden. Das frühere ZIP konnte über den Page-Dateileser nicht gelesen werden; seine Historie wurde nicht übernommen. Dieses Repository beginnt daher mit einer neuen Historie.
+Die beim Projektstart gelesene Fassung der Projekt-Page beschrieb einen früheren lokalen Start mit Commit 0762511 und ZIP-Anhang. Im damaligen Arbeitsordner waren keine Dateien vorhanden. Das frühere ZIP konnte über den Page-Dateileser nicht gelesen werden; seine Historie wurde nicht übernommen. Dieses Repository beginnt daher mit einer neuen Historie. Die aktuelle Page enthält den Projektüberblick und den PDF-Verweis; der frühere Repository-Abschnitt ist dort nicht mehr vorhanden.
 
 Die PDF konnte ebenfalls über diesen Leser nicht ausgelesen werden. Ihre Inhalte gelten nicht als bestätigte Anforderungen.
 
 ## Offene Fragen
 
-Zielgruppe, konkrete Funktionen, Datenquellen, Prognoseziel, Qualitätsmaßstab, Technologie, Betrieb und Lizenz sind noch zu klären.
+Konkrete Zielgruppe, Funktionen, Datenquellen, Prognosehorizont, messbare Qualitätsmaßstäbe, Technologie, Betrieb und Lizenz sind noch zu klären.

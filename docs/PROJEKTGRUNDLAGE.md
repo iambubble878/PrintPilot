@@ -12,12 +12,22 @@ Stand: 2026-10-22
 
 Repository und Dokumentationsstruktur einrichten. Noch keine fachliche Implementierung beauftragt oder spezifiziert.
 
+## Bestätigter Projektkontext
+
+Quelle: aktueller Projektüberblick der Projekt-Page, gelesen am 2026-10-22.
+
+- Kursprojekt zum 3D-Druck von Carolin, Meik, Tamas und Lilia.
+- Bessere Planung des Filamentbedarfs.
+- Weniger unnötiger Lagerbestand und weniger Produktionsausfälle durch Materialmangel.
+- Der Einkauf entscheidet weiterhin über Bestellungen.
+- Gemeinsame Sammlung von Aufgaben und Ergebnissen für den Überblick in der Gruppe.
+
 ## Vorläufige Einordnung
 
 Der PDF-Titel deutet auf eine KI-Prognose für Filamentbedarf im 3D-Druck hin. Dies ist eine Ableitung aus dem Dateinamen, keine Auswertung des Inhalts.
 
 ## Noch auszuwerten
 
-PDF-Inhalte, vorhandenes Repository-ZIP und eventuell frühere Entscheidungen. Beide Anhänge waren über den verfügbaren Page-Dateileser nicht lesbar. Der auf der Page genannte frühere Commit 0762511 ist nicht Teil der neuen Historie.
+PDF-Inhalte und eventuell frühere Entscheidungen. Die PDF ist über den verfügbaren Page-Dateileser weiterhin nicht lesbar. Beim Projektstart war außerdem ein Repository-ZIP verlinkt, das nicht gelesen werden konnte; auf der aktuellen Page ist es nicht mehr verlinkt. Der damals genannte frühere Commit 0762511 ist nicht Teil der neuen Historie.
 
 Weitere Ordner für Anwendung, Tests und Daten erst nach Festlegung der Architektur anlegen. Reale Daten und Projektunterlagen nur nach Prüfung auf Eignung und Vertraulichkeit übernehmen.

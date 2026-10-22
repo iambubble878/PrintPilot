@@ -10,8 +10,10 @@ Stand: 2026-10-22
 
 ## Als Nächstes
 
+- [x] Team, Projektkontext, qualitative Ziele und Entscheidungsverantwortung aus der Projekt-Page übernehmen.
 - [ ] Projektunterlage vollständig lesen und Anforderungen mit Quellenbezug erfassen.
-- [ ] Zielgruppe, Problem und messbare Erfolgskriterien festlegen.
+- [ ] Zielgruppe konkretisieren und messbare Erfolgskriterien für Lagerbestand und Materialengpässe festlegen.
+- [ ] Ablauf für Planungsvorschläge und Bestellentscheidungen durch den Einkauf beschreiben.
 - [ ] Umfang der ersten nutzbaren Version definieren.
 - [ ] Verfügbare Druck- und Filamentdaten sowie Datenqualität klären.
 - [ ] Datenschutz, Speicherung und Zugriffsbedarf klären.

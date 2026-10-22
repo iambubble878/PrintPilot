@@ -4,18 +4,18 @@ Stand: 2026-10-22
 
 | Bereich | Stand |
 | --- | --- |
-| Phase | Projektinitialisierung |
+| Phase | Anforderungsklärung nach Projektinitialisierung |
 | GitHub | Privates Repository iambubble878/PrintPilot angelegt |
 | Dokumentation | Grundstruktur vorhanden |
 | Anwendung | Noch nicht implementiert |
-| Anforderungen | Noch zu erheben und zu bestätigen |
+| Anforderungen | Team und qualitative Ziele bestätigt; Funktionen und messbare Kriterien offen |
 | Technologie / Architektur | Offen |
 | Tests | Noch kein Anwendungscode; Dokumentationsstruktur und Links prüfen |
 | Veröffentlichung | Keine Anwendung veröffentlicht |
 
 ## Nächster Schritt
 
-Projektunterlage auswerten und daraus einen abgestimmten Umfang der ersten Version ableiten.
+Projektunterlage auswerten, messbare Kriterien für Lagerbestand und Materialengpässe festlegen und daraus einen abgestimmten Umfang der ersten Version ableiten. Bestellentscheidungen bleiben beim Einkauf.
 
 ## Einschränkungen
 
