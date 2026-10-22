@@ -1,0 +1,13 @@
+# Lokale Geheimnisse
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Lokale Ausgaben
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
