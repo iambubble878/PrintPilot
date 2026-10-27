@@ -1,21 +1,23 @@
 # Aufgaben
 
-Stand: 2026-10-27
+Stand: 2026-10-22
 
-## Erledigt
+## Projektstart
 
-- [x] Privates Repository PrintPilot und deutschsprachige Projektdokumentation eingerichtet.
-- [x] Team, Projektkontext, qualitative Ziele und Entscheidungsverantwortung des Einkaufs dokumentiert.
-- [x] Statischen Webapp-Prototyp in index.html im Repository dokumentiert und abgelegt.
-- [x] Bedienung, Architektur, Datenmodell, Prognose und Grenzen der Webapp beschrieben.
-- [x] Kundenaufträge anonymisiert und manuell änderbare Status samt erklärter Daten-Empfehlung beschrieben.
+- [x] Privates GitHub-Repository PrintPilot erstellen.
+- [x] Dokumentationsgrundlage und Regeln für jede Änderung anlegen.
+- [x] Lokale Kopie der Projektdateien bereitstellen.
 
 ## Als Nächstes
 
-- [ ] Eingebettete Beispieldaten mit freigegebenen, bereinigten Echtdaten abgleichen.
-- [ ] Messbare Zielwerte für Prognosegüte und Materialengpässe festlegen.
-- [ ] Modellvergleich mit einem längeren, unabhängigen Testzeitraum durchführen.
-- [ ] Anforderungen an Datenimport, Datenschutz, Rollen und Zugriff klären.
-- [ ] Bedarf für Server-Speicherung, Änderungsprotokoll und Sicherungen entscheiden.
-- [ ] Lizenz und gewünschte Sichtbarkeit vor einer Veröffentlichung festlegen.
-- [ ] Browser- und Funktionstests für die wichtigsten Arbeitsabläufe definieren und einrichten.
+- [x] Team, Projektkontext, qualitative Ziele und Entscheidungsverantwortung aus der Projekt-Page übernehmen.
+- [ ] Projektunterlage vollständig lesen und Anforderungen mit Quellenbezug erfassen.
+- [ ] Zielgruppe konkretisieren und messbare Erfolgskriterien für Lagerbestand und Materialengpässe festlegen.
+- [ ] Ablauf für Planungsvorschläge und Bestellentscheidungen durch den Einkauf beschreiben.
+- [ ] Umfang der ersten nutzbaren Version definieren.
+- [ ] Verfügbare Druck- und Filamentdaten sowie Datenqualität klären.
+- [ ] Datenschutz, Speicherung und Zugriffsbedarf klären.
+- [ ] Technologie und Architektur begründet auswählen.
+- [ ] Lizenz festlegen.
+- [ ] Umsetzungsplan mit überprüfbaren Abnahmekriterien erstellen.
+- [ ] Nach Wahl der Technologie passende Tests und Qualitätsprüfungen einrichten.
