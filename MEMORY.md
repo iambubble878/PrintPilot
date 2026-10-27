@@ -1,34 +1,33 @@
 # Projektgedächtnis
 
-Stand: 2026-10-22
+Stand: 2026-10-27
 
 ## Bestätigt
 
 - Projektname: PrintPilot.
-- Laut aktueller Projekt-Page: Kursprojekt von Carolin, Meik, Tamas und Lilia zum 3D-Druck.
-- Ziele: Filamentbedarf besser planen, unnötigen Lagerbestand und Produktionsausfälle durch Materialmangel reduzieren.
+- Kursprojekt von Carolin, Meik, Tamas und Lilia zum 3D-Druck.
+- Ziel: Filamentbedarf besser planen, unnötigen Lagerbestand und Produktionsausfälle durch Materialmangel reduzieren.
 - Bestellentscheidungen verbleiben beim Einkauf.
-- Die Projekt-Page sammelt Aufgaben und Ergebnisse für den Gruppenüberblick.
-- Der Nutzer verlangt ein Repository sowie README.md, TODO.md, MEMORY.md, STATUS.md und CHANGELOG.md.
-- Jede Änderung soll dokumentiert werden.
-- GitHub-Konto: iambubble878.
-- Repository: https://github.com/iambubble878/PrintPilot.
+- Privates GitHub-Repository: https://github.com/iambubble878/PrintPilot.
+- Die Webapp ist ein statischer HTML-Prototyp in index.html und benötigt kein Build-System.
+- Die Webapp umfasst Lagerbestand je Material/Farbe, Einkaufsplanung, Bestellverfolgung, Kundenaufträge, Druckerflotte und Bedarfsprognose für vier Wochen.
+- Fünf anonymisierte Beispiel-Kundenaufträge sind enthalten; Kundennamen und Kontaktdaten werden nicht verwendet.
+- Status kann aus einer Liste gewählt oder frei eingetragen werden. Eine Erklärung empfiehlt einen Status anhand von Bestand, offenen Bestellungen und 4-Wochen-Prognose; der Status wird nur nach manueller Übernahme geändert.
+- Eingaben werden in localStorage des jeweiligen Browsers gespeichert, nicht auf einem Server.
+- Die Regressionsprognose ist statistisch und nicht selbstlernend; die App hat keine Live-Verbindung zu ERP, Kundenbestellungen oder Lieferanten.
 
 ## Entscheidungen
 
 | Datum | Entscheidung | Begründung |
 | --- | --- | --- |
-| 2026-10-22 | Repository zunächst privat | Sichtbarkeit war nicht vorgegeben; Veröffentlichung bleibt eine bewusste spätere Entscheidung. |
+| 2026-10-22 | Repository zunächst privat | Sichtbarkeit war nicht vorgegeben; Veröffentlichung bleibt eine spätere bewusste Entscheidung. |
 | 2026-10-22 | Dokumentation auf Deutsch | Sprache der Projektbeauftragung. |
-| 2026-10-22 | Erst Planung, dann Technologiewahl | Anforderungen sind noch nicht bestätigt. |
-| 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
+| 2026-10-22 | Bestellentscheidungen verbleiben beim Einkauf | Menschliche Prüfung vor Beschaffung. |
+| 2026-10-27 | Webapp als statischer HTML-Prototyp dokumentiert | Schnell im Kurs nutzbar; spätere Datenbank- oder KI-Anbindung bleibt offen. |
+| 2026-10-27 | Status-Empfehlungen sind erklärbar und manuell übernehmbar | Bestand, offene Bestellungen und Prognose werden gezeigt; die App entscheidet nicht automatisch. |
 
 ## Quellen und Grenzen
 
-Die beim Projektstart gelesene Fassung der Projekt-Page beschrieb einen früheren lokalen Start mit Commit 0762511 und ZIP-Anhang. Im damaligen Arbeitsordner waren keine Dateien vorhanden. Das frühere ZIP konnte über den Page-Dateileser nicht gelesen werden; seine Historie wurde nicht übernommen. Dieses Repository beginnt daher mit einer neuen Historie. Die aktuelle Page enthält den Projektüberblick und den PDF-Verweis; der frühere Repository-Abschnitt ist dort nicht mehr vorhanden.
+Die Webapp enthält eingebettete Projekt-Ausgangsdaten und ergänzte Beispieldaten. Die Kundenauftragszeilen enthalten keine Namen oder Kontaktdaten. Das Repository und die App sind nicht mit einem Produktivsystem verbunden. Eine selbstlernende Live-KI ist nicht angeschlossen.
 
-Die PDF konnte ebenfalls über diesen Leser nicht ausgelesen werden. Ihre Inhalte gelten nicht als bestätigte Anforderungen.
-
-## Offene Fragen
-
-Konkrete Zielgruppe, Funktionen, Datenquellen, Prognosehorizont, messbare Qualitätsmaßstäbe, Technologie, Betrieb und Lizenz sind noch zu klären.
+Die beim Projektstart verlinkte PDF wurde damals über den verfügbaren Page-Dateileser nicht ausgelesen. Aussagen aus ihrem Inhalt gelten daher nicht als bestätigte Anforderungen.

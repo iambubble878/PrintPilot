@@ -1,30 +1,44 @@
-# PrintPilot
+# PrintPilot – Filamentplanung
 
-PrintPilot befindet sich am Projektanfang. Dieses Repository enthält die Grundlage für Planung, Umsetzung und nachvollziehbare Dokumentation.
+PrintPilot ist ein Kursprojekt von Carolin, Meik, Tamas und Lilia. Die Webapp zeigt, wie eine bessere Filamentplanung unnötigen Lagerbestand und Produktionsausfälle durch Materialmangel verringern kann. Bestellentscheidungen bleiben beim Einkauf.
 
-## Projektziel
+## Webapp starten
 
-PrintPilot ist das 3D-Drucker-Gruppenprojekt von Carolin, Meik, Tamas und Lilia im Kurs. Ziel ist eine bessere Planung des Filamentbedarfs: weniger unnötiger Lagerbestand und weniger Produktionsausfälle durch Materialmangel. Der Einkauf behält die Entscheidung über Bestellungen.
+Die Webapp ist eine statische HTML-Datei im Repository: `index.html`. Sie benötigt keine Installation und kein Backend.
 
-Die Projekt-Page dient zur gemeinsamen Sammlung von Aufgaben und Ergebnissen. Die dort verlinkte PDF „PrintPilot – KI-Prognose für den Filament-Bedarf“ wurde noch nicht ausgewertet; konkrete Funktionen, Datenquellen und messbare Erfolgskriterien bleiben offen.
+Im Repository-Ordner kann ein lokaler Webserver gestartet werden:
 
-## Einstieg
+```bash
+python -m http.server 8000
+```
 
-1. [STATUS.md](STATUS.md) für den aktuellen Stand lesen.
-2. [TODO.md](TODO.md) für die nächsten Aufgaben prüfen.
-3. [MEMORY.md](MEMORY.md) für Entscheidungen und offene Fragen lesen.
-4. Vor Änderungen die [Beitragsregeln](CONTRIBUTING.md) und [AGENTS.md](AGENTS.md) beachten.
+Danach im Browser `http://localhost:8000` öffnen. Die Datei lässt sich auch direkt im Browser öffnen; für lokale Speicherung ist ein Webserver zuverlässiger.
+
+## Funktionen
+
+- **Übersicht und Lagerbestand:** Bestand je Filamenttyp und Farbe, Material in Druckern sowie offene Bestellungen.
+- **Bedarfsprognose:** vier Wochen, mit Produkt- und Farbprognosen in kg Filament, saisonalen Artikeln und externen Marktplatzideen.
+- **Einkaufsplanung:** berechneter Vorschlag, eigene Bestellmenge, Abweichung und umkehrbarer Prüfstatus.
+- **Bestellungen:** erwartete und tatsächliche Wareneingänge; eingetragene Eingänge können lokal den Bestand aktualisieren.
+- **Kundenaufträge:** fünf anonymisierte Beispiele, frei änderbarer Status und eine erklärte Status-Empfehlung aus Bestand, offenen Bestellungen und 4-Wochen-Prognose.
+- **Druckerflotte und Datensicht:** Druckerübersicht und Einordnung der eingebetteten Ausgangs- und Beispieldaten.
 
 ## Dokumentation
 
-| Datei | Zweck |
+| Datei | Inhalt |
 | --- | --- |
-| TODO.md | Aufgaben und Prioritäten |
-| MEMORY.md | Dauerhaftes Wissen, Entscheidungen, offene Fragen |
-| STATUS.md | Aktueller Stand und nächste Schritte |
-| CHANGELOG.md | Jede Änderung mit Datum, Grund und Prüfung |
-| docs/PROJEKTGRUNDLAGE.md | Quellen, bestätigte Fakten und Annahmen |
+| [Webapp-Übersicht](docs/WEBAPP.md) | Zweck, Funktionsumfang und Grenzen |
+| [Bedienungsanleitung](docs/BEDIENUNG.md) | Navigation und wichtige Abläufe |
+| [Architektur](docs/ARCHITEKTUR.md) | Aufbau, Berechnung und Browser-Speicherung |
+| [Datenmodell](docs/DATENMODELL.md) | Materialien, Bestellungen und Kundenaufträge |
+| [Projektgrundlage](docs/PROJEKTGRUNDLAGE.md) | bestätigter Projektkontext und Annahmen |
+| [Projektstatus](STATUS.md) | aktueller Stand und nächste Aufgaben |
+| [Aufgaben](TODO.md) | offene Arbeiten |
+| [Projektgedächtnis](MEMORY.md) | Entscheidungen und bestätigte Angaben |
+| [Änderungsprotokoll](CHANGELOG.md) | dokumentierte Änderungen |
 
-Repository: https://github.com/iambubble878/PrintPilot (privat), Hauptbranch: main.
+## Grenzen des Prototyps
 
-Noch kein Anwendungscode, keine Installation und keine automatisierten Tests vorhanden. Technologie, Architektur und Lizenz werden nach Klärung der Anforderungen entschieden.
+Die App verwendet eingebettete Ausgangs- und Beispieldaten. Sie ist nicht mit einem ERP, Google Drive, Lieferanten oder einem Kundenbestellsystem verbunden. Die Prognose ist eine statistische Regression mit Zeittrend und Monatsmustern; ein selbstlernendes Live-KI-Modell ist nicht angebunden. Die Status-Empfehlung ist eine nachvollziehbare Datenanalyse und ändert den Status nur nach manueller Übernahme. Eingaben bleiben im jeweiligen Browser und werden nicht zwischen Geräten synchronisiert.
+
+Das Repository ist privat. Eine Lizenz und eine Veröffentlichung über GitHub Pages sind noch nicht festgelegt.

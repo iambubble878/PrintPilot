@@ -2,6 +2,14 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-27 – Webapp dokumentiert und in GitHub aufgenommen
+
+- Dateien: index.html, README.md, STATUS.md, TODO.md, MEMORY.md, docs/PROJEKTGRUNDLAGE.md sowie docs/WEBAPP.md, docs/BEDIENUNG.md, docs/ARCHITEKTUR.md und docs/DATENMODELL.md.
+- Grund: Der bestehende Repository-Stand beschrieb noch den Projektstart, obwohl inzwischen ein Webapp-Prototyp mit Prognose und Kundenauftragsansicht vorliegt.
+- Inhalt: Funktionsübersicht, Anleitung, Datenmodell, lokale Speicherung, Prognose und Grenzen der Status-Empfehlung dokumentiert. Kundenbeispiele sind anonymisiert; Status-Empfehlungen bleiben manuell.
+- Prüfung: Vorhandene AGENTS.md-, README-, STATUS-, TODO- und MEMORY-Regeln gelesen; Repository-Inhalt und vorhandenen Prototyp abgeglichen; Dokumentationspfade auf die in diesem Commit angelegten Dateien abgestimmt.
+- Einschränkung: Keine Anwendungstests ausgeführt. Die Daten- und KI-Anbindungen sind nicht produktiv.
+
 ## 2026-10-22 – Projektkontext aktualisiert
 
 - README.md und docs/PROJEKTGRUNDLAGE.md: Team, Kurskontext, qualitative Ziele und Bestellverantwortung aus der aktuellen Projekt-Page übernommen.
@@ -39,4 +47,4 @@ Geprüft: zehn Dateien im GitHub-Branch main vorhanden; acht lokale Markdown-Dat
 
 ### Bekannte Grenzen
 
-Frühere Git-Historie aus dem ZIP und PDF-Inhalte konnten nicht übernommen werden. Die lokale Git-Verknüpfung scheiterte an einem Schreibzugriffsfehler im geschützten .git-Ordner trotz zusätzlich erteilter Berechtigung; lokale Dateien sind noch nicht als synchronisierte Git-Kopie nutzbar. Diese Einschränkung wurde in STATUS.md ergänzt.
+Frühere Git-Historie aus dem ZIP und PDF-Inhalte konnten nicht übernommen werden. Die lokale Git-Verknüpfung scheiterte an einem Schreibzugriffsfehler im geschützten .git-Ordner trotz zusätzlich erteilter Berechtigung; lokale Dateien sind noch nicht als synchronisierte Git-Kopie nutzbar.
