@@ -4,7 +4,7 @@ PrintPilot ist ein statischer Webapp-Prototyp für die Materialplanung einer 3D-
 
 Das Projekt ist ein Kursprojekt von Carolin, Meik, Tamas und Lilia. Bestellungen werden weiterhin vom Einkauf entschieden. Der Quellcode gehört zum bestehenden privaten Repository [iambubble878/PrintPilot](https://github.com/iambubble878/PrintPilot). Projektstand und offene Aufgaben stehen in [STATUS.md](STATUS.md) und [TODO.md](TODO.md); Entscheidungen und Änderungen in [MEMORY.md](MEMORY.md) und [CHANGELOG.md](CHANGELOG.md).
 
-> **Status:** Demonstrator mit Pseudodaten, ohne Echtzeitverbindung oder automatische Bestellung. Die aktive Bedarfsprognose nutzt vorberechnete Tageswerte eines trainierten Gradient-Boosting-Modells für 22.10.2026–19.01.2027. Die Vorführung startet mit genau vier Wochen ab dem fiktiven Datenstand 21.10.2026; 30, 60 und 90 Tage bleiben wählbar. Ein getrennter historischer Random-Forest-Rücktest für Januar bis März 2026 zeigt Prognose und Ist-Werte. Das Python-Modell wird nicht im Browser trainiert.
+> **Status:** Demonstrator mit Pseudodaten, ohne Echtzeitverbindung oder automatische Bestellung. Die aktive Bedarfsprognose nutzt vorberechnete Tageswerte eines neu trainierten Random Forest für 22.10.2026–19.01.2027. Die Vorführung startet mit genau vier Wochen ab dem fiktiven Datenstand 21.10.2026; 30, 60 und 90 Tage bleiben wählbar. Ein **getrennter** Random-Forest-Rücktest für Januar bis März 2026 zeigt Prognose und Ist-Werte. Das Python-Modell wird nicht im Browser trainiert.
 
 ## Schnellstart
 
@@ -17,11 +17,11 @@ Für Änderungen an den Simulator-Quelldateien erzeugt `npm run build` die `inde
 ## Funktionen
 
 - **Übersicht:** Verbrauch, Bestand, offene Bestellungen, Druckerstatus und Projektziele mit Zielwerten, Fristen relativ zum Projektstart und Messstatus; mangels Ist-Daten wird kein Fortschritt erfunden.
-- **Aktive Bedarfsprognose:** vorberechnete KI-Tageswerte für zwölf Artikel; Standardhorizont vier Wochen (28 Tage), alternativ 30/60/90 Tage. Nachfrage, Bestand, Lieferverzug, Materialaufschlag und Sicherheitsbestand lassen sich als Szenario ändern. Produktgewichte und Materialzuordnung ergeben Stück- und Filamentbedarf. Details und Grenzen stehen in [docs/KI_PROGNOSE.md](docs/KI_PROGNOSE.md).
+- **Aktive Bedarfsprognose:** neu trainierter Random Forest mit vorberechneten Tageswerten für zwölf Artikel; Standardhorizont vier Wochen (28 Tage), alternativ 30/60/90 Tage. Nachfrage, Bestand, Lieferverzug, Materialaufschlag und Sicherheitsbestand lassen sich als Szenario ändern. Produktgewichte und Materialzuordnung ergeben Stück- und Filamentbedarf. Details und Grenzen stehen in [docs/KI_PROGNOSE.md](docs/KI_PROGNOSE.md).
 - **Historischer KI-Rücktest:** `prognosen.json` enthält 1.080 Tageswerte für zwölf Produkt-IDs vom 01.01. bis 31.03.2026. Die bestehende Prognoseansicht zeigt Prognose und tatsächliche Stückzahl getrennt nach Produkt, Monat und Tag. Der Rücktest wurde mit Daten bis 31.12.2025 trainiert; die Ist-Werte von 2026 dienen nur der nachträglichen Prüfung. Diese historische Datei steuert keine aktuellen Bestellvorschläge.
 - **Lagerbestand:** Bestand nach Material-ID und Farbe, einschließlich Lager, Druckerpositionen, offenen Bestellungen und Datenherkunft.
 - **Bestellungen:** Offene Bestellungen öffnen, geplante Liefertermine einsehen und tatsächliche Eingänge erfassen.
-- **Kundenaufträge:** fünf anonymisierte Beispieldatensätze. Die Status-Empfehlung erklärt Bestand, offene Bestellungen und die feste 30-Tage-KI-Basisprognose. Sie folgt nicht den Szenario-Reglern; die Statusänderung bleibt manuell.
+- **Kundenaufträge:** fünf anonymisierte Beispieldatensätze. Die Status-Empfehlung erklärt Bestand, offene Bestellungen und die feste 30-Tage-Basis derselben neuen Random-Forest-Prognose. Sie folgt nicht den Szenario-Reglern; die Statusänderung bleibt manuell.
 - **Monatsdiagramm:** zeigt monatlichen Filamentverbrauch und bestellte Menge in Gramm; Bestellung und Wareneingang werden getrennt behandelt.
 - **Materialhistorie:** Auswahl eines Materials öffnet Verbrauchs- und Einkaufshistorie für das ausgewählte und das vorherige Jahr.
 - **Einkaufsplanung:** elf Material-Farb-Kombinationen mit der kürzesten Reichweite. Der Vorschlag berücksichtigt Lieferzeit, 5 % Ausschuss, 3 kg Sicherheitsbestand, Lager, Druckerplätze und offene Bestellungen.

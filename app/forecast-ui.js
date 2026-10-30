@@ -39,8 +39,19 @@
     });
     svg.innerHTML = content;
   }
+  function renderEvidence() {
+    const test = data.forecast.backtest.test;
+    const metric = test.model[options.horizon + '_days'];
+    const reference = test.same_weekday_baseline[options.horizon + '_days'];
+    const advantage = (1 - metric.wape_percent / reference.wape_percent) * 100;
+    $('kiModelEvidence').innerHTML = '<p><b>Aktive Vorführprognose:</b> Random Forest (120 Bäume). Er nutzt die simulierte Nachfrage von vor 1, 7, 14 und 28 Tagen, gleitende Mittelwerte sowie Kalender- und Artikelmerkmale. Ziel ist die simulierte Nachfrage einschließlich nicht bedienter Stücke. Der historische Rückblick unten ist ein eigenständiger Random-Forest-Lauf.</p>' +
+      '<div class="kiEvidence"><div><small>' + options.horizon + '-Tage-Test · WAPE Random Forest</small><strong>' + fmt(metric.wape_percent, 2) + ' %</strong><small>Nachfragefehler; kleiner ist besser</small></div><div><small>Wochenvergleich · WAPE</small><strong>' + fmt(reference.wape_percent, 2) + ' %</strong><small>Gleicher Wochentag, rekursiv</small></div><div><small>Relativer Fehlervorteil</small><strong>' + fmt(advantage, 1) + ' %</strong><small>gegenüber dem Wochenvergleich</small></div></div>' +
+      '<p>Unabhängiger Test: ' + date(test.from) + ' – ' + date(test.to) + '. Für die angezeigte Kennzahl zählen die ersten ' + options.horizon + ' Testtage. Das Modell wurde nur mit Daten davor trainiert; spätere Tage nutzen eigene Vorhersagen. WAPE ist keine Prognosesicherheit. Der vorgeschlagene Richtwert von 20 % wird für diesen Zeitraum ' + (metric.wape_percent <= 20 ? 'knapp eingehalten' : 'überschritten') + '.</p>' +
+      '<p><b>Datenstand:</b> ' + fmt(data.forecast.source.days) + ' Tage, 12 Artikel. Der Prognosezeitraum beginnt am 22.10.2026. Dies ist ein eingefrorener Vorführstand und keine tagesaktuelle Planung.</p>';
+  }
   function render() {
     result = model.calculate(data, options);
+    renderEvidence();
     const base = model.calculate(data, { horizon: options.horizon, material: options.material });
     window.printPilotScenario = result;
     document.querySelectorAll('[data-ki-preset]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.kiPreset === active)));
@@ -98,8 +109,6 @@
     link.href = url; link.download = 'PrintPilot_Szenario_' + options.horizon + 'T.csv'; link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
-  const test = data.forecast.backtest.test, metric = test.model['90_days'], reference = test.same_weekday_baseline['90_days'];
-  $('kiModelEvidence').innerHTML = '<p><b>Trainiertes Modell:</b> Histogram Gradient Boosting mit Poisson-Ziel. Es nutzt Nachfrage von vor 1, 7, 14 und 28 Tagen, gleitende Mittelwerte sowie Kalendermerkmale. Ziel ist die simulierte Nachfrage einschließlich nicht bedienter Stücke.</p><div class="kiEvidence"><div><small>90-Tage-Test · WAPE Modell</small><strong>' + fmt(metric.wape_percent, 2) + ' %</strong><small>Nachfragefehler; kleiner ist besser</small></div><div><small>Wochenvergleich · WAPE</small><strong>' + fmt(reference.wape_percent, 2) + ' %</strong><small>Gleicher Wochentag, rekursiv</small></div><div><small>Relativer Fehlervorteil</small><strong>' + fmt((1 - metric.wape_percent / reference.wape_percent) * 100, 1) + ' %</strong><small>gegenüber dem Wochenvergleich</small></div></div><p>Unabhängiger Test: ' + date(test.from) + ' – ' + date(test.to) + '. Das Modell wurde nur mit Daten davor trainiert; spätere Tage nutzen eigene Vorhersagen. Kennzahlen stammen aus der mitgelieferten JSON und wurden hier nicht neu trainiert. WAPE ist keine Prognosesicherheit. Der 90-Tage-WAPE von 21,81 % überschreitet die im Konzept vorgeschlagene Grenze von 20 %.</p><p><b>Datenstand:</b> ' + fmt(data.forecast.source.days) + ' Tage, 12 Artikel. Der Prognosezeitraum beginnt am 22.10.2026. Dies ist ein eingefrorener Vorführstand und keine tagesaktuelle Planung.</p>';
   const launch = document.createElement('div'); launch.className = 'kiLaunch';
   launch.innerHTML = '<div><strong>KI-Prognose. Fünf Szenarien. Direkt vorführen.</strong>Nachfrage, Bestand und Lieferverzug ändern und die Materialfolgen sehen.</div><button type="button">KI-Szenario starten →</button>';
   document.querySelector('#overview .head').after(launch);

@@ -9,7 +9,8 @@ runInNewContext(await readFile(new URL('../app/forecast-model.js', import.meta.u
 const { calculate, addDays, presets } = context.PrintPilotForecast;
 const close = (a, b) => assert.ok(Math.abs(a - b) < 1e-7, `${a} != ${b}`);
 
-test('ML-Tageswerte sind vollständig, eindeutig und stimmen mit gelieferten 30/60/90-Tage-Summen überein', () => {
+test('Random-Forest-Tageswerte sind vollständig und stimmen mit den Horizontsummen überein', () => {
+  assert.equal(data.forecast.model.type, 'scikit-learn RandomForestRegressor');
   const rows = data.forecast.daily_forecasts;
   assert.equal(rows.length, 90 * 12);
   assert.equal(new Set(rows.map(r => r.date + r.product_id)).size, rows.length);
@@ -17,7 +18,7 @@ test('ML-Tageswerte sind vollständig, eindeutig und stimmen mit gelieferten 30/
     const date = addDays('2026-10-22', i);
     assert.equal(rows.filter(r => r.date === date).length, 12);
   }
-  for (const horizon of [30, 60, 90]) {
+  for (const horizon of [28, 30, 60, 90]) {
     const result = calculate(data, { horizon });
     const reference = data.forecast.totals[horizon + '_days'];
     assert.equal(result.units, reference.predicted_demand_units_total);
@@ -34,6 +35,7 @@ test('Vier Wochen zeigen genau 28 Tage ab dem fiktiven Datenstand', () => {
   const expected = data.forecast.daily_forecasts.filter(row => row.date <= result.end)
     .reduce((sum, row) => sum + row.predicted_demand_units, 0);
   assert.equal(result.units, expected);
+  assert.equal(result.units, data.forecast.totals['28_days'].predicted_demand_units_total);
   assert.equal(calculate(data, { horizon: 30 }).units, data.forecast.totals['30_days'].predicted_demand_units_total);
 });
 
@@ -113,6 +115,8 @@ test('Einzeldatei enthält lauffähige klassische Skripte, KI-Daten und sämtlic
   assert.ok(count > 10);
   assert.doesNotMatch(html, /PRINTPILOT_SIMULATOR|fonts.googleapis.com|function fitPredict/);
   assert.match(html, /window.PrintPilotData=/);
+  assert.match(html, /Random Forest für die Vorführung/);
+  assert.doesNotMatch(html, /Histogram Gradient Boosting/);
   for (const id of ['kiHorizon', 'kiMaterial', 'kiDemand', 'kiStock', 'kiDelay', 'kiScrap', 'kiSafety', 'kiChart', 'kiMaterials', 'kiExport', 'kiReview']) {
     assert.equal([...html.matchAll(new RegExp(`id="${id}"`, 'g'))].length, 1, id);
   }

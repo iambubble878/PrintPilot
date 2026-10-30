@@ -6,11 +6,11 @@ Die linke Navigation öffnet die Bereiche Übersicht, Bedarfsprognose, Lagerbest
 
 ## Aktive KI-Simulation
 
-In **Bedarfsprognose** zeigt der obere Bereich standardmäßig die vier Wochen vom 22.10. bis 18.11.2026, gerechnet aus dem fiktiven Datenstand 21.10.2026. Alternativ kannst du 30, 60 oder 90 Tage und bei Bedarf ein Material wählen. Die Regler verändern nur die Szenario-Annahmen für Nachfrage, Startbestand, Lieferverzug, Materialaufschlag und Reserve. Die gespeicherten KI-Werte selbst werden dadurch nicht neu berechnet. Die Kundenaufträge verwenden weiterhin die feste 30-Tage-Basisprognose und folgen den Reglern nicht. Einzelheiten und Grenzen stehen in [KI_PROGNOSE.md](KI_PROGNOSE.md).
+In **Bedarfsprognose** zeigt der obere Bereich standardmäßig die vier Wochen vom 22.10. bis 18.11.2026. Diese Tageswerte wurden mit einem neu trainierten Random Forest aus fiktiven Daten bis 21.10.2026 erzeugt. Alternativ kannst du 30, 60 oder 90 Tage und bei Bedarf ein Material wählen. Die Regler verändern nur die Szenario-Annahmen für Nachfrage, Startbestand, Lieferverzug, Materialaufschlag und Reserve. Die gespeicherten Vorhersagen selbst werden dadurch nicht neu berechnet. Die Kundenaufträge verwenden die feste 30-Tage-Basis derselben Prognose und folgen den Reglern nicht. Einzelheiten und Grenzen stehen in [KI_PROGNOSE.md](KI_PROGNOSE.md).
 
 ## Historische KI-Prognose prüfen
 
-In **Bedarfsprognose** steht der Rückblick für Januar bis März 2026. „Alle 12 Produkte“ zeigt die gesamte Datei; die Produktauswahl zeigt die 90 Tageswerte eines Artikels. Die Karten und Tabellen unterscheiden prognostizierte und tatsächliche Stückzahlen. Die Abweichung ist Prognose minus Ist. Der mittlere absolute Fehler mittelt die absoluten Tagesfehler über die angezeigten Produkt-Tage.
+In **Bedarfsprognose** steht darunter ein **separater** Random-Forest-Rückblick für Januar bis März 2026. „Alle 12 Produkte“ zeigt die gesamte Datei; die Produktauswahl zeigt die 90 Tageswerte eines Artikels. Die Karten und Tabellen unterscheiden prognostizierte und tatsächliche Stückzahlen. Die Abweichung ist Prognose minus Ist. Der mittlere absolute Fehler mittelt die absoluten Tagesfehler über die angezeigten Produkt-Tage.
 
 Auf der [Online-Seite](https://iambubble878.github.io/PrintPilot/) lädt die Ansicht `prognosen.json` automatisch. Wenn `index.html` direkt als lokale Datei geöffnet wurde, kann die Datei über **JSON-Datei auswählen** geladen werden. Die Werte sind ein historischer Test und ändern keine aktuelle Einkaufsliste.
 

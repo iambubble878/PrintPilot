@@ -17,6 +17,7 @@ Stand: 2026-10-30
 - Der frühere Chat-Anhang `prognosen.json` enthält 1.080 historische Produkt-Tageswerte für Januar–März 2026. Training endete am 31.12.2025; der aus den Datensätzen neu berechnete MAE beträgt 5,83 Stück.
 - In GitHub-`main` sind der behobene Skriptfehler, die KI-Simulator-Fassung aus `PrintPilot Projekt.zip` und der getrennte historische Rückblick zusammengeführt. Die Vorführung zeigt standardmäßig 28 Tage ab dem fiktiven Datenstand 21.10.2026; Kundenaufträge verwenden weiterhin die feste 30-Tage-KI-Basisprognose.
 - Der Nutzer hat die Online-Version unter https://iambubble878.github.io/PrintPilot/ als veröffentlicht gemeldet. Für die Nutzung dieser Adresse ist kein lokaler Server nötig; die Online-Version wurde noch nicht visuell geprüft.
+- Auf ausdrücklichen Nutzerwunsch wurde die aktive Vier-Wochen-Prognose mit einem neuen RandomForestRegressor aus `Verkaeufe.csv` bis 21.10.2026 erzeugt. Sie ist ein anderer Modelllauf als der historische Random-Forest-Rückblick Januar–März 2026. Für den aktiven Lauf beträgt der unabhängige 28-Tage-WAPE 19,97 %; die 28-Tage-Basisprognose umfasst 14.097 Stück.
 
 ## Entscheidungen
 
@@ -31,6 +32,7 @@ Stand: 2026-10-30
 | 2026-10-30 | KI-Simulator-Fassung über Pull Request #3 übernehmen | Sie enthält vorberechnete Gradient-Boosting-Tageswerte, Produktgewichte und Materialzuordnung; die historische Random-Forest-Datei bleibt ein eigener Rücktest. |
 | 2026-10-30 | Vier Wochen als Standard für die fiktive Vorführung | 28 Tageswerte ab 22.10.2026 werden aus demselben 90-Tage-Export berechnet; der Bestandsstichtag bleibt 21.10.2026. Kundenempfehlungen behalten den 30-Tage-Basiswert. |
 | 2026-10-30 | Online-Adresse als bevorzugten Einstieg dokumentieren | Die veröffentlichte Seite kann ohne lokale Einrichtung geöffnet werden; der lokale Server bleibt nur ein Entwicklungswerkzeug. |
+| 2026-10-30 | Aktive Vorführprognose auf Random Forest umstellen | Der Nutzer möchte auch die folgenden vier Wochen mit Random Forest zeigen. Die 90 Tageswerte wurden aus den vorhandenen fünfjährigen Pseudodaten neu trainiert und rückgetestet; der eigenständige Rückblick bleibt unverändert. |
 | 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
 
 ## Quellen und Grenzen

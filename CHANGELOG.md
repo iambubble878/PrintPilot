@@ -2,6 +2,16 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – Aktive Vier-Wochen-Prognose mit Random Forest neu trainiert
+
+- `model/prognose.py`: Gradient-Boosting-Training durch `RandomForestRegressor` mit festgelegten Parametern ersetzt; 28 Tage als eigenen Prüf- und Summenhorizont ergänzt; Version und SHA-256 der fiktiven Verkaufs-CSV dokumentiert.
+- `printpilot_prognose.json`, `app/forecast-data.json`: 90 Tage × zwölf Artikel aus dem neu trainierten Random Forest übernommen; Produkt-, Material-, Bestands- und Bestellangaben bleiben aus dem bisherigen fiktiven Stichtag.
+- `app/forecast-panel.html`, `app/forecast-ui.js`, `index.html`: aktive Vorführprognose und eigenständigen historischen Random-Forest-Rückblick klar benannt; Qualitätswerte folgen nun dem ausgewählten Horizont; Einzeldatei neu gebaut.
+- `test/forecast.test.js`: Modelltyp, 28/30/60/90-Tage-Summen und Kennzeichnung in der gebauten Seite geprüft.
+- `README.md`, `docs/ANWENDUNG.md`, `docs/KI_PROGNOSE.md`, `docs/PROJEKTGRUNDLAGE.md`, `STATUS.md`, `TODO.md`, `MEMORY.md`, `CHANGELOG.md`: Datenherkunft, Modelltrennung, neue Vorführzahlen, Testwerte und Grenzen aktualisiert.
+- Grund: Der Nutzer möchte die Vier-Wochen-Vorführung tatsächlich mit Random Forest statt mit Gradient Boosting zeigen.
+- Prüfung: fünfjährige CSV mit 1.826 Tagen und zwölf Artikeln validiert; zeitlich getrennte Validierung und unabhängigen Test gerechnet (28-Tage-WAPE 19,97 %, Wochenvergleich 22,83 %); `npm run build`, `npm test` (16/16 bestanden) und Summenabgleich der 1.080 Prognosezeilen. Visuelle Prüfung der Online-Seite steht noch aus.
+
 ## 2026-10-30 – Online-Version als Schnellstart
 
 - `README.md`, `docs/ANWENDUNG.md`, `docs/GITHUB-PAGES.md`: die vom Nutzer gemeldete GitHub-Pages-Adresse als Einstieg dokumentiert und localhost-Anleitungen aus der Nutzung entfernt; veraltete Hinweise zur Erstübernahme des Repositorys ersetzt.

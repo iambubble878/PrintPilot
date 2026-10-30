@@ -4,13 +4,13 @@ Stand: 2026-10-30
 
 | Bereich | Stand |
 | --- | --- |
-| Phase | KI-Simulator mit fiktiver Vier-Wochen-Vorführung und historischem Rücktest |
+| Phase | KI-Simulator mit neu trainierter fiktiver Vier-Wochen-Prognose und getrenntem historischem Rücktest |
 | GitHub | Privates Repository iambubble878/PrintPilot angelegt |
 | Dokumentation | Grundstruktur vorhanden |
-| Anwendung | GitHub-`main` enthält den KI-Simulator aus dem älteren Projekt-ZIP und den getrennten historischen Rückblick. Vier Wochen (28 Tage) sind als Vorführhorizont vorbereitet. |
+| Anwendung | Die Vier-Wochen-Prognose wurde mit Random Forest neu trainiert; der historische Random-Forest-Rückblick bleibt ein eigener Modelllauf. Beide sind im Dashboard getrennt gekennzeichnet. |
 | Anforderungen | Team und qualitative Ziele bestätigt; Funktionen und messbare Kriterien offen |
-| Technologie / Architektur | HTML/CSS/JavaScript ohne Backend; vorberechnete Gradient-Boosting-Tageswerte für Simulation und getrennte historische Random-Forest-Rückblicksdaten |
-| Tests | 16 lokale Node-Tests bestanden; Build, Inline-Syntax und lokaler HTTP-Abruf geprüft; visuelle Browserprüfung noch offen |
+| Technologie / Architektur | HTML/CSS/JavaScript ohne Backend; vorberechnete Random-Forest-Tageswerte für die Simulation und getrennte historische Random-Forest-Rückblicksdaten |
+| Tests | 16 lokale Node-Tests bestanden; Random Forest aus fünfjährigen Pseudodaten trainiert und zeitlich getrennt rückgetestet; Build und Inline-Syntax geprüft; visuelle Browserprüfung noch offen |
 | Veröffentlichung | GitHub-Pages-Adresse vom Nutzer als online gemeldet: https://iambubble878.github.io/PrintPilot/; technische Sichtprüfung der Online-Seite noch offen |
 
 ## Nächster Schritt

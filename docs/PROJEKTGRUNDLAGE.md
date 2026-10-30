@@ -4,7 +4,7 @@ Stand: 2026-10-22
 
 ## Ergänzung vom 30.10.2026
 
-Der folgende Projektstart bleibt als historischer Stand erhalten. Inzwischen wurden die lokal vorhandene PrintPilot-Webseite und `PrintPilot Projekt.zip` geprüft. Die ZIP enthält einen KI-Simulator mit vorberechneten täglichen Gradient-Boosting-Werten, Produkt-Material-Zuordnung und Tests. Ein gesonderter Chat-Anhang `prognosen.json` enthält den historischen Random-Forest-Rücktest Januar–März 2026. Diese zwei Modellläufe sind getrennte Datenquellen. Die ZIP-eigenen `.git`-Daten und temporären Artefakte werden nicht übernommen; weitere Einzelheiten stehen in [KI_PROGNOSE.md](KI_PROGNOSE.md).
+Der folgende Projektstart bleibt als historischer Stand erhalten. Inzwischen wurden die lokal vorhandene PrintPilot-Webseite und `PrintPilot Projekt.zip` geprüft. Die ZIP enthielt ursprünglich einen KI-Simulator mit vorberechneten täglichen Gradient-Boosting-Werten, Produkt-Material-Zuordnung und Tests. Am 30.10.2026 wurde die aktive Vorführprognose mit einem Random Forest aus der fünfjährigen fiktiven Nachfrage neu trainiert. Ein gesonderter Chat-Anhang `prognosen.json` enthält den historischen Random-Forest-Rücktest Januar–März 2026. Diese zwei Random-Forest-Läufe bleiben getrennte Datenquellen. Die ZIP-eigenen `.git`-Daten und temporären Artefakte werden nicht übernommen; weitere Einzelheiten stehen in [KI_PROGNOSE.md](KI_PROGNOSE.md).
 
 ## Quellen
 

@@ -7,21 +7,31 @@ Benötigt: pandas, numpy, scikit-learn (siehe requirements.txt).
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import sklearn
 try:
-    from sklearn.ensemble import HistGradientBoostingRegressor
+    from sklearn.ensemble import RandomForestRegressor
 except ModuleNotFoundError as exc:
     raise SystemExit("scikit-learn fehlt. Im Projektordner zuerst 'python -m pip install -r requirements.txt' ausführen.") from exc
 
 
 LAGS = (1, 7, 14, 28)
 MAX_LAG = max(LAGS)
-HORIZONS = (30, 60, 90)
+HORIZONS = (28, 30, 60, 90)
+RF_SETTINGS = {
+    "n_estimators": 120,
+    "max_depth": 14,
+    "min_samples_leaf": 4,
+    "max_features": 0.7,
+    "n_jobs": 1,
+    "random_state": 42,
+}
 def read_history(path: Path) -> tuple[pd.DatetimeIndex, list[str], dict[str, str], np.ndarray]:
     required = {
         "datum", "produkt_id", "material_id", "verkauft_stueck", "nachfrage_sim_stueck",
@@ -71,10 +81,10 @@ def feature_row(history: list[float] | np.ndarray, day: pd.Timestamp,
                 product_index: int, number_of_products: int) -> list[float]:
     if len(history) < MAX_LAG:
         raise ValueError("Für die Merkmale fehlen mindestens 28 historische Tage.")
-    doy_angle = 2 * np.pi * (day.dayofyear - 1) / 365.25
+    doy_angle = 2 * np.pi * (day.day_of_year - 1) / 365.25
     row = [float(history[-lag]) for lag in LAGS]
     row += [float(np.mean(history[-7:])), float(np.mean(history[-28:]))]
-    row += [float(day.dayofweek), float(day.month), float(np.sin(doy_angle)), float(np.cos(doy_angle))]
+    row += [float(day.day_of_week), float(day.month), float(np.sin(doy_angle)), float(np.cos(doy_angle))]
     row += [float(i == product_index) for i in range(number_of_products)]
     return row
 
@@ -91,18 +101,14 @@ def training_examples(days: pd.DatetimeIndex, products: list[str], demand: np.nd
 
 
 def fit_model(days: pd.DatetimeIndex, products: list[str], demand: np.ndarray,
-              end_index: int) -> HistGradientBoostingRegressor:
+              end_index: int) -> RandomForestRegressor:
     x, y = training_examples(days, products, demand, end_index)
-    model = HistGradientBoostingRegressor(
-        loss="poisson", max_iter=120, max_leaf_nodes=15,
-        min_samples_leaf=30, l2_regularization=5.0,
-        early_stopping=False, categorical_features=None, random_state=42,
-    )
+    model = RandomForestRegressor(**RF_SETTINGS)
     model.fit(x, y)
     return model
 
 
-def predict_days(model: HistGradientBoostingRegressor, days: pd.DatetimeIndex,
+def predict_days(model: RandomForestRegressor, days: pd.DatetimeIndex,
                  products: list[str], known_demand: np.ndarray,
                  start_index: int, horizon: int = 90) -> np.ndarray:
     history = [known_demand[:start_index, j].tolist() for j in range(len(products))]
@@ -192,9 +198,11 @@ def export_payload(days: pd.DatetimeIndex, products: list[str],
                    "history_end": last_day.date().isoformat(),
                    "days": len(days), "products": products,
                    "material_by_product": material_by_product},
-        "model": {"type": "scikit-learn HistGradientBoostingRegressor",
+        "model": {"type": "scikit-learn RandomForestRegressor",
                   "target": "nachfrage_sim_stueck", "unit": "nachgefragte Stück pro Produkt und Tag",
                   "method": "recursive_daily_90_days",
+                  "scikit_learn_version": sklearn.__version__,
+                  "settings": {key: value for key, value in RF_SETTINGS.items() if key != "n_jobs"},
                   "uses_future_price_or_promotions": False},
         "backtest": {"validation": validation, "test": test},
         "daily_forecasts": daily,
@@ -217,6 +225,7 @@ def main() -> None:
     model = fit_model(days, products, demand, len(days))
     future = predict_days(model, days, products, demand, len(days))
     payload = export_payload(days, products, material_by_product, future, validation, test)
+    payload["source"]["csv_sha256"] = hashlib.sha256(args.csv.read_bytes()).hexdigest()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Gespeichert: {args.output}")
