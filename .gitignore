@@ -1,13 +1,31 @@
-# Lokale Geheimnisse
+# Betriebssystem und Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Lokale Laufzeit- und Geheimnisdateien
 .env
 .env.*
 !.env.example
+*.log
 *.pem
 *.key
-
-# Lokale Ausgaben
-*.log
 *.tmp
 *.bak
-.DS_Store
-Thumbs.db
+
+# Python-Umgebung und lokal trainierte Modelle
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+model/
+models/
+*.pkl
+*.joblib
+
+# Abhängigkeiten und Build-Ausgaben, falls später ergänzt
+node_modules/
+dist/
+build/

@@ -1,6 +1,6 @@
 # Projektgedächtnis
 
-Stand: 2026-10-22
+Stand: 2026-10-30
 
 ## Bestätigt
 
@@ -13,6 +13,8 @@ Stand: 2026-10-22
 - Jede Änderung soll dokumentiert werden.
 - GitHub-Konto: iambubble878.
 - Repository: https://github.com/iambubble878/PrintPilot.
+- Die bestehende lokale Webseite lag als `PrintPilot-GitHub`-Ordner und gleichlautende ZIP vor; alle zehn Dateien stimmten inhaltlich überein. Das Repository enthielt zuvor nur Projektdokumentation.
+- Der frühere Chat-Anhang `prognosen.json` enthält 1.080 historische Produkt-Tageswerte für Januar–März 2026. Training endete am 31.12.2025; der aus den Datensätzen neu berechnete MAE beträgt 5,83 Stück.
 
 ## Entscheidungen
 
@@ -21,6 +23,8 @@ Stand: 2026-10-22
 | 2026-10-22 | Repository zunächst privat | Sichtbarkeit war nicht vorgegeben; Veröffentlichung bleibt eine bewusste spätere Entscheidung. |
 | 2026-10-22 | Dokumentation auf Deutsch | Sprache der Projektbeauftragung. |
 | 2026-10-22 | Erst Planung, dann Technologiewahl | Anforderungen sind noch nicht bestätigt. |
+| 2026-10-30 | Bestehenden Webapp-Prototyp übernehmen | Der Nutzer hat die lokal vorhandene Webseite für die KI-Integration benannt. |
+| 2026-10-30 | Historische Prognose und Ist-Werte getrennt anzeigen | Der Rücktest für Januar–März 2026 ist keine aktuelle Bedarfsprognose. Produkt- und Materialzuordnung samt Gramm je Stück sind nicht bestätigt. |
 | 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
 
 ## Quellen und Grenzen

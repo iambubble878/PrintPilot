@@ -1,21 +1,21 @@
 # Projektstatus
 
-Stand: 2026-10-22
+Stand: 2026-10-30
 
 | Bereich | Stand |
 | --- | --- |
-| Phase | Anforderungsklärung nach Projektinitialisierung |
+| Phase | Bestehenden Webapp-Prototyp und historischen KI-Rücktest übernehmen |
 | GitHub | Privates Repository iambubble878/PrintPilot angelegt |
 | Dokumentation | Grundstruktur vorhanden |
-| Anwendung | Noch nicht implementiert |
+| Anwendung | Lokaler statischer PrintPilot-Prototyp vorhanden; Übernahme als Änderungsvorschlag vorbereitet |
 | Anforderungen | Team und qualitative Ziele bestätigt; Funktionen und messbare Kriterien offen |
-| Technologie / Architektur | Offen |
-| Tests | Noch kein Anwendungscode; Dokumentationsstruktur und Links prüfen |
+| Technologie / Architektur | Bestehendes HTML/CSS/JavaScript ohne Backend; historischer JSON-Rücktest getrennt von aktueller Planung |
+| Tests | JSON-Struktur und MAE geprüft; JavaScript-Syntax und lokaler HTTP-Abruf geprüft; visuelle Browserprüfung noch offen |
 | Veröffentlichung | Keine Anwendung veröffentlicht |
 
 ## Nächster Schritt
 
-Projektunterlage auswerten, messbare Kriterien für Lagerbestand und Materialengpässe festlegen und daraus einen abgestimmten Umfang der ersten Version ableiten. Bestellentscheidungen bleiben beim Einkauf.
+Änderungsvorschlag prüfen, Rückblick und bisherige Funktionen im Browser testen und dann in `main` übernehmen. Für eine spätere Nutzung von KI-Werten in aktuellen Bestellvorschlägen müssen Produkt-ID, Material-ID und Gramm pro Stück verifiziert werden. Bestellentscheidungen bleiben beim Einkauf.
 
 ## Einschränkungen
 
@@ -23,4 +23,4 @@ Der frühere ZIP-Anhang und die PDF konnten über den verfügbaren Page-Dateiles
 
 ## Lokale Git-Verknüpfung
 
-Die Projektdateien liegen lokal vor. Das Verbinden der lokalen Git-Kopie mit origin und das Übernehmen der Remote-Historie scheiterte an einem Schreibzugriffsfehler im geschützten .git-Ordner, auch nach erteilter zusätzlicher Berechtigung. Die lokale Kopie ist daher noch nicht mit GitHub synchronisiert; maßgeblich ist vorerst die GitHub-Historie.
+Die ältere lokale Git-Kopie konnte damals nicht synchronisiert werden. Die Übernahme dieser Webseite erfolgt über einen neuen Änderungsvorschlag auf Basis der vorhandenen GitHub-Historie; `main` bleibt bis zur Prüfung unverändert.
