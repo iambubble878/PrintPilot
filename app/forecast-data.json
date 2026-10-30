@@ -1,0 +1,7031 @@
+{
+  "forecast": {
+    "schema_version": 2,
+    "generated_at_utc": "2026-10-27T14:22:19.037051+00:00",
+    "source": {
+      "history_start": "2021-10-22",
+      "history_end": "2026-10-21",
+      "days": 1826,
+      "products": [
+        "ART-001",
+        "ART-002",
+        "ART-003",
+        "ART-004",
+        "ART-005",
+        "ART-006",
+        "ART-007",
+        "ART-008",
+        "ART-009",
+        "ART-010",
+        "ART-011",
+        "ART-012"
+      ],
+      "material_by_product": {
+        "ART-001": "MAT-001",
+        "ART-002": "MAT-002",
+        "ART-003": "MAT-003",
+        "ART-004": "MAT-004",
+        "ART-005": "MAT-005",
+        "ART-006": "MAT-006",
+        "ART-007": "MAT-007",
+        "ART-008": "MAT-008",
+        "ART-009": "MAT-009",
+        "ART-010": "MAT-010",
+        "ART-011": "MAT-011",
+        "ART-012": "MAT-012"
+      }
+    },
+    "model": {
+      "type": "scikit-learn HistGradientBoostingRegressor",
+      "target": "nachfrage_sim_stueck",
+      "unit": "nachgefragte Stück pro Produkt und Tag",
+      "method": "recursive_daily_90_days",
+      "uses_future_price_or_promotions": false
+    },
+    "backtest": {
+      "validation": {
+        "from": "2026-04-25",
+        "to": "2026-07-23",
+        "model": {
+          "30_days": {
+            "mae_demand_units_per_product_day": 5.506,
+            "wape_percent": 14.57,
+            "actual_demand_units": 13603,
+            "predicted_demand_units": 13369
+          },
+          "60_days": {
+            "mae_demand_units_per_product_day": 5.468,
+            "wape_percent": 14.09,
+            "actual_demand_units": 27942,
+            "predicted_demand_units": 26993
+          },
+          "90_days": {
+            "mae_demand_units_per_product_day": 5.947,
+            "wape_percent": 15.64,
+            "actual_demand_units": 41075,
+            "predicted_demand_units": 38758
+          }
+        },
+        "same_weekday_baseline": {
+          "30_days": {
+            "mae_demand_units_per_product_day": 7.228,
+            "wape_percent": 19.13,
+            "actual_demand_units": 13603,
+            "predicted_demand_units": 13545
+          },
+          "60_days": {
+            "mae_demand_units_per_product_day": 7.869,
+            "wape_percent": 20.28,
+            "actual_demand_units": 27942,
+            "predicted_demand_units": 27054
+          },
+          "90_days": {
+            "mae_demand_units_per_product_day": 8.852,
+            "wape_percent": 23.27,
+            "actual_demand_units": 41075,
+            "predicted_demand_units": 40597
+          }
+        }
+      },
+      "test": {
+        "from": "2026-07-24",
+        "to": "2026-10-21",
+        "model": {
+          "30_days": {
+            "mae_demand_units_per_product_day": 7.261,
+            "wape_percent": 19.94,
+            "actual_demand_units": 13112,
+            "predicted_demand_units": 12076
+          },
+          "60_days": {
+            "mae_demand_units_per_product_day": 7.671,
+            "wape_percent": 21.03,
+            "actual_demand_units": 26257,
+            "predicted_demand_units": 23944
+          },
+          "90_days": {
+            "mae_demand_units_per_product_day": 8.26,
+            "wape_percent": 21.81,
+            "actual_demand_units": 40902,
+            "predicted_demand_units": 36463
+          }
+        },
+        "same_weekday_baseline": {
+          "30_days": {
+            "mae_demand_units_per_product_day": 8.308,
+            "wape_percent": 22.81,
+            "actual_demand_units": 13112,
+            "predicted_demand_units": 12355
+          },
+          "60_days": {
+            "mae_demand_units_per_product_day": 8.637,
+            "wape_percent": 23.69,
+            "actual_demand_units": 26257,
+            "predicted_demand_units": 24540
+          },
+          "90_days": {
+            "mae_demand_units_per_product_day": 9.987,
+            "wape_percent": 26.37,
+            "actual_demand_units": 40902,
+            "predicted_demand_units": 36818
+          }
+        }
+      }
+    },
+    "daily_forecasts": [
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-10-22",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-10-23",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 80
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 28
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-10-24",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 28
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-10-25",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 65
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-10-26",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-10-27",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-10-28",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-10-29",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-10-30",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 85
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 56
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-10-31",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 64
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-01",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 65
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 84
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-02",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 94
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-03",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-04",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 95
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-11-05",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 100
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-11-06",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 108
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-07",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 85
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-08",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-09",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-10",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-11-11",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-12",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-13",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 75
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 57
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 111
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-14",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 84
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-15",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 103
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-16",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 105
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-17",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 105
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-18",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 69
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 105
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-11-19",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 75
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 57
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 112
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-20",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 77
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 132
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 81
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-21",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 56
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 104
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 28
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-22",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 15
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 71
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 57
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 126
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-23",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 129
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 75
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-24",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 74
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 129
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 77
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-25",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 143
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 75
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-26",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 141
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 75
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 37
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-11-27",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 73
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 136
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-28",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 94
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-11-29",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 105
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-11-30",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 94
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 29
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 28
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-01",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 56
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 92
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 29
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 28
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-02",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 83
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 29
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-03",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 86
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-04",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 65
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 101
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-12-05",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 70
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 14
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 23
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-06",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 87
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-07",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-08",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-09",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-10",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-11",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 67
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 103
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-12-12",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 76
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 12
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-13",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 88
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-14",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 89
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-15",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 89
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-16",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 88
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-17",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 59
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 87
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-18",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 66
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 98
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 68
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-12-19",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 72
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 12
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-20",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 86
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-21",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-22",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 90
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-23",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 91
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-24",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 91
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-25",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 65
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 102
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 67
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2026-12-26",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 77
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 27
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 12
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-27",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 60
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 93
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-28",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 61
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 50
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 88
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-29",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 62
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 84
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 63
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-30",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 80
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 57
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2026-12-31",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 38
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 29
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 36
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 15
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-01",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 18
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 22
+      },
+      {
+        "date": "2027-01-02",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-03",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-04",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 54
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-05",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 55
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-06",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-07",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 46
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-08",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 58
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 45
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-09",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 43
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 38
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 26
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-10",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-11",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-12",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-13",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-14",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 47
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-15",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 57
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 51
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 35
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 44
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 34
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 33
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 21
+      },
+      {
+        "date": "2027-01-16",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 19
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 42
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 38
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 38
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 25
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 24
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-17",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 13
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 53
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-18",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-001",
+        "material_id": "MAT-001",
+        "predicted_demand_units": 52
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-002",
+        "material_id": "MAT-002",
+        "predicted_demand_units": 48
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-003",
+        "material_id": "MAT-003",
+        "predicted_demand_units": 49
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-004",
+        "material_id": "MAT-004",
+        "predicted_demand_units": 32
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-005",
+        "material_id": "MAT-005",
+        "predicted_demand_units": 39
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-006",
+        "material_id": "MAT-006",
+        "predicted_demand_units": 40
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-007",
+        "material_id": "MAT-007",
+        "predicted_demand_units": 41
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-008",
+        "material_id": "MAT-008",
+        "predicted_demand_units": 16
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-009",
+        "material_id": "MAT-009",
+        "predicted_demand_units": 31
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-010",
+        "material_id": "MAT-010",
+        "predicted_demand_units": 30
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-011",
+        "material_id": "MAT-011",
+        "predicted_demand_units": 20
+      },
+      {
+        "date": "2027-01-19",
+        "product_id": "ART-012",
+        "material_id": "MAT-012",
+        "predicted_demand_units": 17
+      }
+    ],
+    "totals": {
+      "30_days": {
+        "from": "2026-10-22",
+        "to": "2026-11-20",
+        "predicted_demand_units_total": 15922,
+        "by_product": {
+          "ART-001": 2046,
+          "ART-002": 1564,
+          "ART-003": 2694,
+          "ART-004": 1387,
+          "ART-005": 1895,
+          "ART-006": 1209,
+          "ART-007": 1339,
+          "ART-008": 688,
+          "ART-009": 991,
+          "ART-010": 953,
+          "ART-011": 646,
+          "ART-012": 510
+        },
+        "by_material_product_units": {
+          "MAT-001": 2046,
+          "MAT-002": 1564,
+          "MAT-003": 2694,
+          "MAT-004": 1387,
+          "MAT-005": 1895,
+          "MAT-006": 1209,
+          "MAT-007": 1339,
+          "MAT-008": 688,
+          "MAT-009": 991,
+          "MAT-010": 953,
+          "MAT-011": 646,
+          "MAT-012": 510
+        }
+      },
+      "60_days": {
+        "from": "2026-10-22",
+        "to": "2026-12-20",
+        "predicted_demand_units_total": 31475,
+        "by_product": {
+          "ART-001": 3896,
+          "ART-002": 3111,
+          "ART-003": 5696,
+          "ART-004": 2432,
+          "ART-005": 3815,
+          "ART-006": 2441,
+          "ART-007": 2702,
+          "ART-008": 1236,
+          "ART-009": 1951,
+          "ART-010": 1872,
+          "ART-011": 1309,
+          "ART-012": 1014
+        },
+        "by_material_product_units": {
+          "MAT-001": 3896,
+          "MAT-002": 3111,
+          "MAT-003": 5696,
+          "MAT-004": 2432,
+          "MAT-005": 3815,
+          "MAT-006": 2441,
+          "MAT-007": 2702,
+          "MAT-008": 1236,
+          "MAT-009": 1951,
+          "MAT-010": 1872,
+          "MAT-011": 1309,
+          "MAT-012": 1014
+        }
+      },
+      "90_days": {
+        "from": "2026-10-22",
+        "to": "2027-01-19",
+        "predicted_demand_units_total": 44623,
+        "by_product": {
+          "ART-001": 5520,
+          "ART-002": 4535,
+          "ART-003": 7587,
+          "ART-004": 3384,
+          "ART-005": 5265,
+          "ART-006": 3620,
+          "ART-007": 3944,
+          "ART-008": 1707,
+          "ART-009": 2867,
+          "ART-010": 2762,
+          "ART-011": 1915,
+          "ART-012": 1517
+        },
+        "by_material_product_units": {
+          "MAT-001": 5520,
+          "MAT-002": 4535,
+          "MAT-003": 7587,
+          "MAT-004": 3384,
+          "MAT-005": 5265,
+          "MAT-006": 3620,
+          "MAT-007": 3944,
+          "MAT-008": 1707,
+          "MAT-009": 2867,
+          "MAT-010": 2762,
+          "MAT-011": 1915,
+          "MAT-012": 1517
+        }
+      }
+    }
+  },
+  "products": [
+    {
+      "id": "ART-001",
+      "materialId": "MAT-001",
+      "name": "Smartphone-Staender",
+      "gramsPerUnit": 65.0,
+      "season": "ganzjaehrig"
+    },
+    {
+      "id": "ART-002",
+      "materialId": "MAT-002",
+      "name": "Schreibtisch-Organizer",
+      "gramsPerUnit": 140.0,
+      "season": "schulstart"
+    },
+    {
+      "id": "ART-003",
+      "materialId": "MAT-003",
+      "name": "Weihnachtsanhaenger",
+      "gramsPerUnit": 28.0,
+      "season": "weihnachten"
+    },
+    {
+      "id": "ART-004",
+      "materialId": "MAT-004",
+      "name": "Pflanzenstecker",
+      "gramsPerUnit": 22.0,
+      "season": "fruehling"
+    },
+    {
+      "id": "ART-005",
+      "materialId": "MAT-005",
+      "name": "Deko-Stern",
+      "gramsPerUnit": 75.0,
+      "season": "weihnachten"
+    },
+    {
+      "id": "ART-006",
+      "materialId": "MAT-006",
+      "name": "Stiftebecher",
+      "gramsPerUnit": 95.0,
+      "season": "schulstart"
+    },
+    {
+      "id": "ART-007",
+      "materialId": "MAT-007",
+      "name": "Kabelhalter-Set",
+      "gramsPerUnit": 55.0,
+      "season": "ganzjaehrig"
+    },
+    {
+      "id": "ART-008",
+      "materialId": "MAT-008",
+      "name": "Pflanztopf",
+      "gramsPerUnit": 170.0,
+      "season": "fruehling"
+    },
+    {
+      "id": "ART-009",
+      "materialId": "MAT-009",
+      "name": "LED-Abdeckung",
+      "gramsPerUnit": 85.0,
+      "season": "ganzjaehrig"
+    },
+    {
+      "id": "ART-010",
+      "materialId": "MAT-010",
+      "name": "Wandhalterung",
+      "gramsPerUnit": 120.0,
+      "season": "ganzjaehrig"
+    },
+    {
+      "id": "ART-011",
+      "materialId": "MAT-011",
+      "name": "Schutzfuss-Set",
+      "gramsPerUnit": 45.0,
+      "season": "ganzjaehrig"
+    },
+    {
+      "id": "ART-012",
+      "materialId": "MAT-012",
+      "name": "Flexibler-Schluesselanhaenger",
+      "gramsPerUnit": 20.0,
+      "season": "ganzjaehrig"
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-001",
+      "type": "PLA",
+      "color": "Schwarz",
+      "warehouseKg": 51.0,
+      "printerKg": 6.177,
+      "leadDays": 10,
+      "price": 19.0
+    },
+    {
+      "id": "MAT-002",
+      "type": "PLA",
+      "color": "Weiss",
+      "warehouseKg": 72.0,
+      "printerKg": 5.371,
+      "leadDays": 10,
+      "price": 19.0
+    },
+    {
+      "id": "MAT-003",
+      "type": "PLA",
+      "color": "Rot",
+      "warehouseKg": 0.0,
+      "printerKg": 0.164,
+      "leadDays": 10,
+      "price": 21.0
+    },
+    {
+      "id": "MAT-004",
+      "type": "PLA",
+      "color": "Gruen",
+      "warehouseKg": 10.0,
+      "printerKg": 2.493,
+      "leadDays": 10,
+      "price": 21.0
+    },
+    {
+      "id": "MAT-005",
+      "type": "PLA",
+      "color": "Gold",
+      "warehouseKg": 1.0,
+      "printerKg": 2.139,
+      "leadDays": 10,
+      "price": 25.0
+    },
+    {
+      "id": "MAT-006",
+      "type": "PLA",
+      "color": "Blau",
+      "warehouseKg": 90.0,
+      "printerKg": 3.901,
+      "leadDays": 10,
+      "price": 21.0
+    },
+    {
+      "id": "MAT-007",
+      "type": "PETG",
+      "color": "Schwarz",
+      "warehouseKg": 42.0,
+      "printerKg": 2.316,
+      "leadDays": 10,
+      "price": 24.0
+    },
+    {
+      "id": "MAT-008",
+      "type": "PETG",
+      "color": "Weiss",
+      "warehouseKg": 74.0,
+      "printerKg": 2.8,
+      "leadDays": 10,
+      "price": 24.0
+    },
+    {
+      "id": "MAT-009",
+      "type": "PETG",
+      "color": "Transparent",
+      "warehouseKg": 40.0,
+      "printerKg": 2.616,
+      "leadDays": 10,
+      "price": 26.0
+    },
+    {
+      "id": "MAT-010",
+      "type": "PETG",
+      "color": "Grau",
+      "warehouseKg": 23.0,
+      "printerKg": 3.792,
+      "leadDays": 10,
+      "price": 24.0
+    },
+    {
+      "id": "MAT-011",
+      "type": "TPU",
+      "color": "Schwarz",
+      "warehouseKg": 312.0,
+      "printerKg": 4.336,
+      "leadDays": 16,
+      "price": 34.0
+    },
+    {
+      "id": "MAT-012",
+      "type": "TPU",
+      "color": "Rot",
+      "warehouseKg": 305.0,
+      "printerKg": 3.27,
+      "leadDays": 16,
+      "price": 36.0
+    }
+  ],
+  "orders": [
+    {
+      "id": "EK-02197",
+      "materialId": "MAT-010",
+      "date": "2026-10-07",
+      "kg": 26.0
+    },
+    {
+      "id": "EK-02203",
+      "materialId": "MAT-002",
+      "date": "2026-10-13",
+      "kg": 50.0
+    },
+    {
+      "id": "EK-02210",
+      "materialId": "MAT-001",
+      "date": "2026-10-19",
+      "kg": 28.0
+    },
+    {
+      "id": "EK-02212",
+      "materialId": "MAT-002",
+      "date": "2026-10-20",
+      "kg": 40.0
+    },
+    {
+      "id": "EK-02213",
+      "materialId": "MAT-009",
+      "date": "2026-10-20",
+      "kg": 23.0
+    },
+    {
+      "id": "EK-02214",
+      "materialId": "MAT-003",
+      "date": "2026-10-21",
+      "kg": 33.0
+    },
+    {
+      "id": "EK-02215",
+      "materialId": "MAT-010",
+      "date": "2026-10-21",
+      "kg": 25.0
+    },
+    {
+      "id": "EK-02216",
+      "materialId": "MAT-004",
+      "date": "2026-10-22",
+      "kg": 19.0
+    },
+    {
+      "id": "EK-02217",
+      "materialId": "MAT-012",
+      "date": "2026-10-29",
+      "kg": 11.0
+    },
+    {
+      "id": "EK-02218",
+      "materialId": "MAT-006",
+      "date": "2026-10-24",
+      "kg": 18.0
+    },
+    {
+      "id": "EK-02219",
+      "materialId": "MAT-007",
+      "date": "2026-10-25",
+      "kg": 21.0
+    },
+    {
+      "id": "EK-02220",
+      "materialId": "MAT-001",
+      "date": "2026-10-26",
+      "kg": 26.0
+    },
+    {
+      "id": "EK-02221",
+      "materialId": "MAT-008",
+      "date": "2026-10-26",
+      "kg": 34.0
+    },
+    {
+      "id": "EK-02222",
+      "materialId": "MAT-002",
+      "date": "2026-10-27",
+      "kg": 38.0
+    },
+    {
+      "id": "EK-02223",
+      "materialId": "MAT-009",
+      "date": "2026-10-27",
+      "kg": 16.0
+    },
+    {
+      "id": "EK-02224",
+      "materialId": "MAT-010",
+      "date": "2026-10-28",
+      "kg": 25.0
+    },
+    {
+      "id": "EK-02225",
+      "materialId": "MAT-011",
+      "date": "2026-11-04",
+      "kg": 16.0
+    },
+    {
+      "id": "EK-02226",
+      "materialId": "MAT-005",
+      "date": "2026-10-30",
+      "kg": 50.0
+    },
+    {
+      "id": "EK-02227",
+      "materialId": "MAT-006",
+      "date": "2026-10-31",
+      "kg": 15.0
+    }
+  ]
+}

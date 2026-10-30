@@ -4,7 +4,7 @@ PrintPilot ist ein statischer Webapp-Prototyp für die Materialplanung einer 3D-
 
 Das Projekt ist ein Kursprojekt von Carolin, Meik, Tamas und Lilia. Bestellungen werden weiterhin vom Einkauf entschieden. Der Quellcode gehört zum bestehenden privaten Repository [iambubble878/PrintPilot](https://github.com/iambubble878/PrintPilot). Projektstand und offene Aufgaben stehen in [STATUS.md](STATUS.md) und [TODO.md](TODO.md); Entscheidungen und Änderungen in [MEMORY.md](MEMORY.md) und [CHANGELOG.md](CHANGELOG.md).
 
-> **Status:** Demonstrator mit CSV-Ausgangsdaten und ergänzten Pseudo-Daten. Keine Echtzeitverbindung und keine automatische Bestellung. Die aktuelle 4-Wochen-Prognose nutzt eingebettete Beispieldaten und eine statistische Regression. Zusätzlich zeigt die Bedarfsprognose einen getrennten historischen KI-Rücktest für Januar bis März 2026. Eine automatische Lernpipeline mit laufenden Echtdaten ist nicht angeschlossen.
+> **Status:** Demonstrator mit Pseudodaten, ohne Echtzeitverbindung oder automatische Bestellung. Die aktive Bedarfsprognose nutzt vorberechnete Tageswerte eines trainierten Gradient-Boosting-Modells für 22.10.2026–19.01.2027. Ein getrennter historischer Random-Forest-Rücktest für Januar bis März 2026 zeigt Prognose und Ist-Werte. Das Python-Modell wird nicht im Browser trainiert.
 
 ## Schnellstart
 
@@ -20,14 +20,16 @@ Danach im Browser `http://localhost:8765` öffnen. Auf diesem Windows-PC ist Por
 
 Für die automatische Anzeige des historischen KI-Rücktests ist der lokale Webserver nötig, weil Browser beim direkten Öffnen einer HTML-Datei den Zugriff auf `prognosen.json` häufig sperren. Alternativ kann die Datei in der Bedarfsprognose über „JSON-Datei auswählen“ geladen werden.
 
+Für Änderungen an den Simulator-Quelldateien erzeugt `npm run build` die `index.html` erneut. `npm test` prüft die Modell- und Planungsrechnung. Für das bloße Öffnen der Seite sind beide Befehle nicht nötig.
+
 ## Funktionen
 
 - **Übersicht:** Verbrauch, Bestand, offene Bestellungen, Druckerstatus und Projektziele mit Zielwerten, Fristen relativ zum Projektstart und Messstatus; mangels Ist-Daten wird kein Fortschritt erfunden.
-- **Bedarfsprognose:** saisonale Regression je Produkt/Material; kurzer WAPE-Rücktest mit einfachen Vergleichswerten; 4-Wochen-Prognose für Farben nach Filamenttyp und Produkte nach Typ, Farbe, Stück und kg Filament. Die Saisonübersicht enthält zehn Artikel (zwei mit interner Historie, acht klar markierte Ideen ohne erfundene Mengen); dazu kommen zehn qualitative externe Marktplatz-Ideen. Prognosezeilen öffnen eine Modell-Erklärung und lassen sich in die Einkaufsplanung übernehmen.
+- **Aktive Bedarfsprognose:** vorberechnete KI-Tageswerte für zwölf Artikel; Szenarien für 30/60/90 Tage, Nachfrage, Bestand, Lieferverzug, Materialaufschlag und Sicherheitsbestand. Produktgewichte und Materialzuordnung ergeben Stück- und Filamentbedarf. Details und Grenzen stehen in [docs/KI_PROGNOSE.md](docs/KI_PROGNOSE.md).
 - **Historischer KI-Rücktest:** `prognosen.json` enthält 1.080 Tageswerte für zwölf Produkt-IDs vom 01.01. bis 31.03.2026. Die bestehende Prognoseansicht zeigt Prognose und tatsächliche Stückzahl getrennt nach Produkt, Monat und Tag. Der Rücktest wurde mit Daten bis 31.12.2025 trainiert; die Ist-Werte von 2026 dienen nur der nachträglichen Prüfung. Diese historische Datei steuert keine aktuellen Bestellvorschläge.
 - **Lagerbestand:** Bestand nach Material-ID und Farbe, einschließlich Lager, Druckerpositionen, offenen Bestellungen und Datenherkunft.
 - **Bestellungen:** Offene Bestellungen öffnen, geplante Liefertermine einsehen und tatsächliche Eingänge erfassen.
-- **Kundenaufträge:** fünf anonymisierte Beispieldatensätze. Eine datenbasierte KI-Status-Empfehlung erklärt Bestand, offene Bestellungen und 4-Wochen-Prognose; die Statusänderung bleibt manuell.
+- **Kundenaufträge:** fünf anonymisierte Beispieldatensätze. Die Status-Empfehlung erklärt Bestand, offene Bestellungen und die feste 30-Tage-KI-Basisprognose. Sie folgt nicht den Szenario-Reglern; die Statusänderung bleibt manuell.
 - **Monatsdiagramm:** zeigt monatlichen Filamentverbrauch und bestellte Menge in Gramm; Bestellung und Wareneingang werden getrennt behandelt.
 - **Materialhistorie:** Auswahl eines Materials öffnet Verbrauchs- und Einkaufshistorie für das ausgewählte und das vorherige Jahr.
 - **Einkaufsplanung:** elf Material-Farb-Kombinationen mit der kürzesten Reichweite. Der Vorschlag berücksichtigt Lieferzeit, 5 % Ausschuss, 3 kg Sicherheitsbestand, Lager, Druckerplätze und offene Bestellungen.
@@ -41,11 +43,17 @@ Weitere Hinweise zur Bedienung stehen in [docs/ANWENDUNG.md](docs/ANWENDUNG.md).
 ## Projektstruktur
 
 ```text
-PrintPilot-GitHub/
+PrintPilot/
 ├── index.html                     # vollständige, eigenständig ausführbare Webapp
-├── historical-prognosen.js        # Anzeige und Prüfung des historischen KI-Rücktests
+├── historical-prognosen.js        # Quellskript für den historischen KI-Rücktest
 ├── prognosen.json                 # historischer Rücktest Januar–März 2026
-├── printpilot_prognose.json       # separater späterer Prognoseexport, nicht mit Rücktest vermischen
+├── printpilot_prognose.json       # separater Prognoseexport Oktober 2026–Januar 2027
+├── app/                           # Simulator-Quellen und zweite kleine Demo
+├── model/                         # Trainingsskript, keine trainierte Modelldatei
+├── tools/                         # Import und Build der Einzeldatei
+├── test/                          # lokale Modell- und Seitenprüfungen
+├── package.json                   # Build- und Testbefehle ohne externe Pakete
+├── server.mjs                     # optionaler lokaler Node-Server
 ├── README.md                      # Projektübersicht und Schnellstart
 ├── CHANGELOG.md                   # dokumentierte Änderungen
 ├── .gitignore                     # typische lokale Dateien ausschließen
@@ -55,7 +63,8 @@ PrintPilot-GitHub/
     ├── ANWENDUNG.md               # Bedienungsanleitung
     ├── ARCHITEKTUR.md             # technischer Aufbau
     ├── DATENMODELL-UND-AUDIT.md   # Datengrundlage und Zahlenabgleich
-    └── GITHUB-PAGES.md            # Veröffentlichung über GitHub Pages
+    ├── GITHUB-PAGES.md            # Veröffentlichung über GitHub Pages
+    └── KI_PROGNOSE.md             # Modell, Daten und Simulationsregeln
 ```
 
 ## Datengrundlage in Kürze
@@ -75,7 +84,7 @@ Die 19 offenen Bestellungen mit insgesamt 514 kg sind noch nicht als Wareneingan
 
 ## GitHub verwenden
 
-Das bestehende private Repository `iambubble878/PrintPilot` enthält bereits Projektdokumentation. Die Webseite wird in dieses Repository übernommen, ohne die bisherige Historie oder gleichnamige Dokumentationsdateien zu überschreiben. Eine Anleitung für GitHub Desktop und VS Code steht in [docs/GITHUB-PAGES.md](docs/GITHUB-PAGES.md).
+Das bestehende private Repository `iambubble878/PrintPilot` enthält die Webseite. Die ältere KI-Simulator-Fassung wird als gesonderter Änderungsvorschlag zusammen mit dem historischen Rückblick vorbereitet. Eine Anleitung für GitHub Desktop und VS Code steht in [docs/GITHUB-PAGES.md](docs/GITHUB-PAGES.md).
 
 ## Grenzen und Lizenz
 

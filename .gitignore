@@ -20,10 +20,11 @@ Desktop.ini
 venv/
 __pycache__/
 *.py[cod]
-model/
 models/
 *.pkl
 *.joblib
+tmp/
+output/
 
 # Abhängigkeiten und Build-Ausgaben, falls später ergänzt
 node_modules/

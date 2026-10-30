@@ -2,6 +2,20 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – KI-Simulator-Fassung als Änderungsvorschlag zusammengeführt
+
+- `index.html`: aus der älteren Projekt-ZIP neu gebaut; aktive 30/60/90-Tage-KI-Simulation und Kundenauftragsanalyse mit fester 30-Tage-KI-Basis, ergänzt um den getrennten historischen Januar–März-Rückblick.
+- `app/presentation-base.html`, `app/forecast-data.json`, `app/forecast-model.js`, `app/forecast-ui.js`, `app/forecast-panel.html`, `app/forecast.css`: Quelloberfläche, vorberechnete Tageswerte und Simulationslogik aus der ZIP übernommen; Rückblick in Panel und Gestaltung ergänzt.
+- `app/index.html`, `app/app.js`, `app/model.js`, `app/styles.css`: die in der ZIP enthaltene kleinere Demo als getrennten Bereich übernommen.
+- `model/prognose.py`, `model/requirements.txt`: Trainingsskript und Paketliste aus der ZIP übernommen, keine trainierte Modelldatei.
+- `tools/build-presentation.mjs`, `tools/prepare_forecast.py`: Build und Datenaufbereitung übernommen; Build bindet nun auch das historische Rückblickskript ein.
+- `test/file-launch.test.js`, `test/forecast.test.js`, `test/model.test.js`, `package.json`: vorhandene Prüfungen und lokale Befehle übernommen.
+- `server.mjs`: lokalen Server aus der ZIP übernommen und für `prognosen.json` ergänzt; Projektunterlagen bleiben vom Server ausgeschlossen.
+- `.gitignore`: Python-Quellordner für Versionierung freigegeben; trainierte Modellartefakte, `tmp/` und `output/` bleiben ausgeschlossen.
+- `README.md`, `data/README.md`, `docs/ANWENDUNG.md`, `docs/ARCHITEKTUR.md`, `docs/DATENMODELL-UND-AUDIT.md`, `docs/GITHUB-PAGES.md`, `docs/KI_PROGNOSE.md`, `docs/PROJEKTGRUNDLAGE.md`, `STATUS.md`, `TODO.md`, `MEMORY.md`, `CHANGELOG.md`: aktive und historische Modelle, Quellen, Bedienung, Grenzen, Prüfungen und offenen Review-Stand dokumentiert.
+- Grund: Die bisherige GitHub-Fassung zeigte bei Kundenaufträgen wegen eines Skriptfehlers nur „Analyse läuft“ und enthielt nicht die ältere KI-Simulator-Fassung. Beide Prognosezeiträume sollen im bestehenden Dashboard eindeutig getrennt bleiben.
+- Prüfung: `npm run build`, `npm test` (15 von 15 bestanden), eindeutige HTML-IDs, historisches Panel im Build, lokaler Node-Server mit HTTP 200 für `index.html` und `prognosen.json` sowie HTTP 404 für `README.md`. Eine visuelle Browserprüfung bleibt offen.
+
 ## 2026-10-30 – Kundenauftragsanalyse wieder ausführbar
 
 - index.html: fehlendes Skript-Ende vor der Kundenauftragsanalyse ergänzt; dadurch kann die Empfehlung statt des Platzhalters „Analyse läuft“ berechnet werden.

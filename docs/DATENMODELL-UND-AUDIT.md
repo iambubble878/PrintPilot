@@ -59,6 +59,8 @@ Die Projektunterlage nennt als angenommene Ausgangslage 40.000 € Überbestand 
 Der angezeigte Lagerwert von etwa 31.382 € basiert auf den CSV-Beständen und Standardpreisen. Der Fortschritt gegenüber der angenommenen 40.000-€-Basis ist deshalb nur ein rechnerischer Orientierungswert, keine validierte Projektmessung.
 ## Bedarfsprognose, Saison und aktuelle Trends
 
+Die folgenden Abschnitte beschreiben die frühere, jetzt ausgeblendete 4-Wochen-Regressionsansicht des Ausgangsprototyps. Die aktive KI-Simulation mit vorberechneten Tageswerten ist in [KI_PROGNOSE.md](KI_PROGNOSE.md) dokumentiert. Der getrennte Rücktest Januar–März 2026 steht in `../prognosen.json` und speist keine aktuellen Bestellvorschläge.
+
 Die Prognoseseite trennt verkaufte Stücke vom Filamentverbrauch in Gramm. Die frühere Kennzahl `+24 %` war ein statischer Demo-Platzhalter ohne Datenherleitung und wurde entfernt. Aus den vollständigen Monatswerten Nov 2021–Sep 2026 ergibt sich:
 
 | Kennzahl | Datenwert | Berechnung |
