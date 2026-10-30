@@ -15,6 +15,7 @@ Stand: 2026-10-30
 - Repository: https://github.com/iambubble878/PrintPilot.
 - Die bestehende lokale Webseite lag als `PrintPilot-GitHub`-Ordner und gleichlautende ZIP vor; alle zehn Dateien stimmten inhaltlich überein. Das Repository enthielt zuvor nur Projektdokumentation.
 - Der frühere Chat-Anhang `prognosen.json` enthält 1.080 historische Produkt-Tageswerte für Januar–März 2026. Training endete am 31.12.2025; der aus den Datensätzen neu berechnete MAE beträgt 5,83 Stück.
+- Die derzeitige Kundenauftrags-Empfehlung nutzt Bestand, offene Bestellungen und die eingebettete statistische 4-Wochen-Prognose. Sie nutzt weder den historischen Januar–März-Rücktest noch den im älteren Projekt-ZIP enthaltenen 30-Tage-KI-Simulator.
 
 ## Entscheidungen
 

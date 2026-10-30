@@ -2,6 +2,14 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – Kundenauftragsanalyse wieder ausführbar
+
+- index.html: fehlendes Skript-Ende vor der Kundenauftragsanalyse ergänzt; dadurch kann die Empfehlung statt des Platzhalters „Analyse läuft“ berechnet werden.
+- MEMORY.md: festgehalten, dass diese Kundenempfehlung die statistische 4-Wochen-Prognose nutzt und nicht den historischen KI-Rücktest oder die andere KI-Simulator-Fassung.
+- CHANGELOG.md: diese Korrektur dokumentiert.
+- Grund: Ein zusätzliches `<script>` innerhalb eines offenen Skripts verursachte einen JavaScript-Syntaxfehler.
+- Prüfung: Alle Inline-Skripte der Seite mit Node.js syntaktisch geprüft. Die visuelle Browserprüfung bleibt offen.
+
 ## 2026-10-30 – Lokalen Startport korrigiert
 
 - README.md, docs/ANWENDUNG.md und docs/GITHUB-PAGES.md: Beispielbefehl und URL von Port 8000 auf 8765 geändert und Bindung an den lokalen Rechner ergänzt.

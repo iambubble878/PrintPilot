@@ -852,7 +852,7 @@ const customerOrderStatuses=['Neu eingegangen','In Planung','In Bearbeitung','Wa
 function saveCustomerOrderStatuses(map){try{localStorage.setItem('printpilot-customer-order-statuses',JSON.stringify(map))}catch{}}
 let savedCustomerStatuses={};try{savedCustomerStatuses=JSON.parse(localStorage.getItem('printpilot-customer-order-statuses')||'{}')}catch{}
 document.querySelectorAll('.customerOrderStatus').forEach(select=>{const id=select.dataset.orderId;const custom=select.parentElement.querySelector('.customerOrderCustomStatus');const value=savedCustomerStatuses[id]||select.dataset.defaultStatus||'In Planung';if(customerOrderStatuses.includes(value)){select.value=value;custom.hidden=true}else{select.value='__custom__';custom.hidden=false;custom.value=value}select.addEventListener('change',()=>{if(select.value==='__custom__'){custom.hidden=false;custom.focus();savedCustomerStatuses[id]=custom.value;saveCustomerOrderStatuses(savedCustomerStatuses)}else{custom.hidden=true;savedCustomerStatuses[id]=select.value;saveCustomerOrderStatuses(savedCustomerStatuses)}});custom.addEventListener('input',()=>{savedCustomerStatuses[id]=custom.value;saveCustomerOrderStatuses(savedCustomerStatuses)})});
-<script>
+</script><script>
 (function(){
  const all=window.printPilotAllProcurementItems||[],fc=window.printPilotForecastRows||[],hist=window.printPilotHistory||{};
  const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/ß/g,'ss').replace(/ue/g,'u').replace(/oe/g,'o').replace(/ae/g,'a').replace(/[^a-z0-9]/g,'');
