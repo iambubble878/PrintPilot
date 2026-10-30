@@ -1,6 +1,6 @@
 # Bestehende Webseite in das vorhandene GitHub-Repository übernehmen
 
-Stand 30.10.2026: Die Webseite liegt bereits auf `main`. Die ältere KI-Simulator-Fassung wird als gesonderter Änderungsvorschlag geprüft. Die folgenden Upload-Schritte sind für spätere lokale Änderungen gedacht; vorhandene Dateien und Historie nicht erneut durch eine ZIP ersetzen. Nach Änderungen unter `app/` zuerst `npm run build`, dann `npm test` ausführen und die erzeugte `index.html` mit committen.
+Stand 30.10.2026: Die Webseite und der KI-Simulator liegen auf `main`. Die folgenden Upload-Schritte sind für spätere lokale Änderungen gedacht; vorhandene Dateien und Historie nicht erneut durch eine ZIP ersetzen. Nach Änderungen unter `app/` zuerst `npm run build`, dann `npm test` ausführen und die erzeugte `index.html` mit committen.
 
 ## ZIP entpacken
 

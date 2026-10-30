@@ -9,7 +9,7 @@
   const fields = { horizon: 'kiHorizon', material: 'kiMaterial', demand: 'kiDemand', stock: 'kiStock', delay: 'kiDelay', scrap: 'kiScrap', safety: 'kiSafety' };
   let options = { ...model.defaults }, active = 'basis', result;
   for (const m of data.materials) $('kiMaterial').add(new Option(m.type + ' · ' + m.color + ' (' + m.id + ')', m.id));
-  const baseline30 = model.calculate(data);
+  const baseline30 = model.calculate(data, { horizon: 30 });
   // The other pages retain the snapshot and use the fixed 30-day base forecast.
   window.printPilotForecastRows = baseline30.products.map(p => {
     const m = data.materials.find(x => x.id === p.materialId);
@@ -48,7 +48,7 @@
       $(fields[key] + 'Value').textContent = fmt(options[key]) + (key === 'delay' ? ' Tage' : key === 'safety' ? ' kg' : ' %');
     }
     $('kiCase').textContent = names[active];
-    $('kiPeriod').textContent = date(result.start) + ' – ' + date(result.end) + ' · ' + options.horizon + ' Tage';
+    $('kiPeriod').textContent = date(result.start) + ' – ' + date(result.end) + ' · ' + (options.horizon === 28 ? '4 Wochen (28 Tage)' : options.horizon + ' Tage');
     $('kiUnits').textContent = fmt(result.units) + ' Stk.';
     $('kiUnitsDelta').textContent = (result.units - base.units >= 0 ? '+' : '') + fmt(result.units - base.units) + ' Stück gegenüber Basis';
     $('kiNeed').textContent = fmt(result.needKg, 1) + ' kg';

@@ -14,8 +14,10 @@ Stand: 2026-10-30
 - [x] Historische KI-Prognose Januar–März 2026 getrennt von aktuellen Prognosen in die bestehende Ansicht einbauen.
 - [x] Skriptfehler beheben, der bei Kundenaufträgen „Analyse läuft“ stehen ließ.
 - [x] KI-Simulator aus `PrintPilot Projekt.zip` mit dem historischen Rückblick in einer Arbeitskopie zusammenführen und die vorhandenen 15 Tests ausführen.
+- [x] KI-Simulator-Fassung über Pull Request #3 in `main` übernehmen.
+- [x] Vier Wochen (28 Tage) als Standardhorizont für den fiktiven Simulationsstart ergänzen und 30 Tage für Kundenaufträge beibehalten.
 - [ ] Rückblick, Produktauswahl und bisherige Dashboard-Funktionen visuell im Browser prüfen.
-- [ ] KI-Simulator, Kundenaufträge und Änderungsvorschlag visuell prüfen und über die Übernahme in `main` entscheiden.
+- [ ] KI-Simulator und Kundenaufträge im Browser visuell prüfen.
 - [ ] Produkt-zu-Material-Zuordnung und Gramm je Stück für eine reale Beschaffungsplanung fachlich verifizieren.
 - [x] Team, Projektkontext, qualitative Ziele und Entscheidungsverantwortung aus der Projekt-Page übernehmen.
 - [ ] Projektunterlage vollständig lesen und Anforderungen mit Quellenbezug erfassen.

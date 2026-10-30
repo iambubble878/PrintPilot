@@ -15,7 +15,7 @@ Stand: 2026-10-30
 - Repository: https://github.com/iambubble878/PrintPilot.
 - Die bestehende lokale Webseite lag als `PrintPilot-GitHub`-Ordner und gleichlautende ZIP vor; alle zehn Dateien stimmten inhaltlich überein. Das Repository enthielt zuvor nur Projektdokumentation.
 - Der frühere Chat-Anhang `prognosen.json` enthält 1.080 historische Produkt-Tageswerte für Januar–März 2026. Training endete am 31.12.2025; der aus den Datensätzen neu berechnete MAE beträgt 5,83 Stück.
-- In GitHub-`main` wurde der Skriptfehler hinter „Analyse läuft“ behoben; diese Fassung nutzt weiterhin die statistische 4-Wochen-Prognose. Der separate Änderungsvorschlag aus `PrintPilot Projekt.zip` nutzt bei Kundenaufträgen die feste 30-Tage-KI-Basisprognose und zeigt außerdem einen 30/60/90-Tage-Simulator.
+- In GitHub-`main` sind der behobene Skriptfehler, die KI-Simulator-Fassung aus `PrintPilot Projekt.zip` und der getrennte historische Rückblick zusammengeführt. Die Vorführung zeigt standardmäßig 28 Tage ab dem fiktiven Datenstand 21.10.2026; Kundenaufträge verwenden weiterhin die feste 30-Tage-KI-Basisprognose.
 
 ## Entscheidungen
 
@@ -27,7 +27,8 @@ Stand: 2026-10-30
 | 2026-10-30 | Bestehenden Webapp-Prototyp übernehmen | Der Nutzer hat die lokal vorhandene Webseite für die KI-Integration benannt. |
 | 2026-10-30 | Historische Prognose und Ist-Werte getrennt anzeigen | Der Rücktest für Januar–März 2026 ist keine aktuelle Bedarfsprognose. Produkt- und Materialzuordnung samt Gramm je Stück sind nicht bestätigt. |
 | 2026-10-30 | Lokalen Beispielport 8765 verwenden | Windows reserviert auf diesem PC Port 8000; der lokale HTTP-Abruf der Webseite und `prognosen.json` über 8765 wurde geprüft. |
-| 2026-10-30 | Ältere KI-Simulator-Fassung als getrennten Änderungsvorschlag prüfen | Sie enthält vorberechnete Gradient-Boosting-Tageswerte, Produktgewichte und Materialzuordnung; die historische Random-Forest-Datei bleibt ein eigener Rücktest. |
+| 2026-10-30 | KI-Simulator-Fassung über Pull Request #3 übernehmen | Sie enthält vorberechnete Gradient-Boosting-Tageswerte, Produktgewichte und Materialzuordnung; die historische Random-Forest-Datei bleibt ein eigener Rücktest. |
+| 2026-10-30 | Vier Wochen als Standard für die fiktive Vorführung | 28 Tageswerte ab 22.10.2026 werden aus demselben 90-Tage-Export berechnet; der Bestandsstichtag bleibt 21.10.2026. Kundenempfehlungen behalten den 30-Tage-Basiswert. |
 | 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
 
 ## Quellen und Grenzen

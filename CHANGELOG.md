@@ -2,6 +2,16 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – Vier Wochen als fiktive Standardvorführung
+
+- `app/forecast-model.js`: 28 Tage als Standard und zulässigen Horizont ergänzt; 30/60/90 Tage bleiben verfügbar.
+- `app/forecast-panel.html`, `app/forecast-ui.js`: „4 Wochen (28 Tage)“ als Standard-Auswahl und den fiktiven Datenstand sichtbar gemacht; Kundenaufträge verwenden weiter ausdrücklich die feste 30-Tage-KI-Basis.
+- `index.html`: mit `npm run build` aus den aktualisierten Quellen neu erzeugt.
+- `test/forecast.test.js`: exakten 28-Tage-Zeitraum und die Summen aus den Tageswerten geprüft; bestehende 30-Tage-Rechnung separat abgesichert.
+- `README.md`, `docs/ANWENDUNG.md`, `docs/GITHUB-PAGES.md`, `docs/KI_PROGNOSE.md`, `STATUS.md`, `TODO.md`, `MEMORY.md`, `CHANGELOG.md`: Vorführzeitraum, Datenstand, Trennung der Kundenaufträge und tatsächlichen GitHub-Stand erläutert.
+- Grund: Das fiktive Unternehmen möchte bei der Vorführung die Prognose für genau die folgenden vier Wochen zeigen, ohne die festen Daten als tagesaktuell auszugeben.
+- Prüfung: `npm run build` und `npm test` (16 von 16 bestanden); Standardzeitraum 22.10.–18.11.2026 mit 14.775 Stück, 1.114,6 kg Filamentbedarf und 425 kg Zusatzvorschlag unabhängig aus dem Modell berechnet. Browser-Sichtprüfung bleibt offen.
+
 ## 2026-10-30 – KI-Simulator-Fassung als Änderungsvorschlag zusammengeführt
 
 - `index.html`: aus der älteren Projekt-ZIP neu gebaut; aktive 30/60/90-Tage-KI-Simulation und Kundenauftragsanalyse mit fester 30-Tage-KI-Basis, ergänzt um den getrennten historischen Januar–März-Rückblick.

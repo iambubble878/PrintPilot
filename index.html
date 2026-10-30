@@ -37,10 +37,10 @@
 <article class="panel sidepanel"><div class="darkhead"><h2>Projektziele</h2><p>Orientierungswerte aus der Projektbeschreibung</p></div><div class="goals"><div class="goal"><div class="goalrow"><span>Überbestand / gebundenes Kapital</span><b>≤ 28.000 €</b></div><div class="hint">Ausgangsannahme 40.000 € · Ziel −30 % bis Monat 6 · aktueller Überbestand: nicht gemessen</div></div><div class="goal"><div class="goalrow"><span>Stillstand durch Materialmangel</span><b>&lt; 24 Maschinenstunden</b></div><div class="hint">Zielzeitraum 12 Monate · Ausgangsannahme ca. 15 Tage/Jahr · aktueller Stillstand: nicht erfasst</div></div><div class="goal"><div class="goalrow"><span>Aufwand für Einkaufsplanung</span><b>−30 %</b></div><div class="hint">Ziel bis Monat 6 · aktueller Zeitaufwand: nicht gemessen</div></div><div class="info">Zieltermine beziehen sich auf den Projektstart. Das Startdatum und Ist-Messreihen fehlen; deshalb zeigt die App den aktuellen Stand als nicht gemessen und kann weder Kalender-Zieldaten noch ein Erreichungsdatum berechnen.</div></div></article></div>
 <div class="lower"><article class="panel"><div class="panelhead"><div><h2>Material mit Handlungsbedarf</h2><div class="hint">Bestand im Verhältnis zum prognostizierten Bedarf</div></div><span class="kicker">2 prüfen</span></div><div class="tablewrap"><table><thead><tr><th>Filament</th><th>Bestand</th><th>Bedarf</th><th>Reichweite</th><th>Status</th></tr></thead><tbody id="stockRows"></tbody></table></div></article><article class="panel"><div class="panelhead"><div><h2>Nächste Bestellungen</h2><div class="hint">Vorschlag nach Bedarf und Lieferzeit</div></div><span class="print">Einkaufsplan →</span></div><div class="tablewrap"><table><thead><tr><th>Material</th><th>Menge (g)</th><th>Lieferant</th><th>Benötigt bis</th><th></th></tr></thead><tbody id="orderRows"></tbody></table></div></article></div><div class="footer">PrintPilot · KI-gestützte Filamentplanung · <span>Demo-Daten, keine Echtzeitverbindung</span></div></section>
 <section class="page" id="forecast"><div class="head"><div><div class="eyebrow">Bedarf vorausschauend planen</div><h1>Bedarfsprognose</h1><p class="subtitle">Verkaufsverlauf, Saisonalität und Materialbedarf in einer Ansicht.</p></div><div class="controls"><select class="select" id="forecastMaterial"><option>Alle Filamente</option><option>PLA</option><option>PETG</option><option>ABS</option><option>TPU</option></select></div></div><section id="kiSimulator" aria-labelledby="kiTitle">
-  <div class="kiIntro"><div><div class="kiEyebrow">FÜNF JAHRE DATEN · ZWÖLF ARTIKEL</div><h2 id="kiTitle">Was passiert, wenn sich der Plan ändert?</h2><p>KI-Prognose und Materialplanung live durchspielen.</p></div><span class="kiSnapshot">Pseudodaten bis 21.10.2026<br>Fester Simulationsstart: 22.10.2026</span></div>
+  <div class="kiIntro"><div><div class="kiEyebrow">FÜNF JAHRE DATEN · ZWÖLF ARTIKEL</div><h2 id="kiTitle">Was passiert, wenn sich der Plan ändert?</h2><p>KI-Prognose und Materialplanung für einen fiktiven Stichtag durchspielen.</p></div><span class="kiSnapshot">Fiktiver Datenstand: 21.10.2026<br>Prognose ab 22.10.2026</span></div>
   <div class="kiPresets" role="group" aria-label="Szenarien"><button type="button" data-ki-preset="basis" aria-pressed="true">Basisplanung</button><button type="button" data-ki-preset="rush" aria-pressed="false">↗ Nachfrage +50 %</button><button type="button" data-ki-preset="delay" aria-pressed="false">◷ Lieferung +14 Tage</button><button type="button" data-ki-preset="shortage" aria-pressed="false">Bestand nur 25 %</button><button type="button" data-ki-preset="relief" aria-pressed="false">Entspannung</button></div>
   <div class="kiWorkspace"><aside class="kiControls" aria-label="Szenario-Annahmen"><div class="kiControlTitle"><h3>Annahmen anpassen</h3><button type="button" id="kiReset">Zurücksetzen</button></div>
-    <label class="kiSelectLabel" for="kiHorizon">Planungshorizont<select id="kiHorizon"><option value="30">30 Tage</option><option value="60">60 Tage</option><option value="90">90 Tage</option></select></label>
+    <label class="kiSelectLabel" for="kiHorizon">Planungshorizont<select id="kiHorizon"><option value="28">4 Wochen (28 Tage)</option><option value="30">30 Tage</option><option value="60">60 Tage</option><option value="90">90 Tage</option></select></label>
     <label class="kiSelectLabel" for="kiMaterial">Material und Farbe<select id="kiMaterial"><option value="all">Alle 12 Materialien</option></select></label>
     <div class="kiRange"><label for="kiDemand">Nachfrage <output id="kiDemandValue" for="kiDemand">100 %</output></label><input id="kiDemand" type="range" min="50" max="200" step="5" value="100"><small>Manueller Faktor auf die KI-Tagesprognose</small></div>
     <div class="kiRange"><label for="kiStock">Startbestand <output id="kiStockValue" for="kiStock">100 %</output></label><input id="kiStock" type="range" min="0" max="200" step="5" value="100"><small>Anteil von Lager + dokumentiertem Druckermaterial</small></div>
@@ -765,7 +765,7 @@ document.querySelectorAll('.customerOrderStatus').forEach(select=>{const id=sele
   const dayMs = 86400000;
   const addDays = (date, days) => new Date(Date.parse(date + 'T00:00:00Z') + days * dayMs).toISOString().slice(0, 10);
   const difference = (a, b) => Math.round((Date.parse(a + 'T00:00:00Z') - Date.parse(b + 'T00:00:00Z')) / dayMs);
-  const defaults = Object.freeze({ horizon: 30, demand: 100, stock: 100, delay: 0, scrap: 5, safety: 3, material: 'all' });
+  const defaults = Object.freeze({ horizon: 28, demand: 100, stock: 100, delay: 0, scrap: 5, safety: 3, material: 'all' });
   const presets = Object.freeze({
     basis: { ...defaults },
     rush: { ...defaults, demand: 150 },
@@ -778,7 +778,7 @@ document.querySelectorAll('.customerOrderStatus').forEach(select=>{const id=sele
     for (const [key, min, max] of [['demand', 0, 300], ['stock', 0, 300], ['delay', 0, 90], ['scrap', 0, 100], ['safety', 0, 100]]) {
       if (!Number.isFinite(options[key]) || options[key] < min || options[key] > max) throw new Error('Ungültiger Szenariowert: ' + key);
     }
-    if (![30, 60, 90].includes(options.horizon)) throw new Error('Zeitraum muss 30, 60 oder 90 Tage sein.');
+    if (![28, 30, 60, 90].includes(options.horizon)) throw new Error('Zeitraum muss 28, 30, 60 oder 90 Tage sein.');
     if (options.material !== 'all' && !data.materials.some(m => m.id === options.material)) throw new Error('Unbekanntes Material.');
     const start = addDays(data.forecast.source.history_end, 1);
     const dates = Array.from({ length: options.horizon }, (_, i) => addDays(start, i));
@@ -860,7 +860,7 @@ document.querySelectorAll('.customerOrderStatus').forEach(select=>{const id=sele
   const fields = { horizon: 'kiHorizon', material: 'kiMaterial', demand: 'kiDemand', stock: 'kiStock', delay: 'kiDelay', scrap: 'kiScrap', safety: 'kiSafety' };
   let options = { ...model.defaults }, active = 'basis', result;
   for (const m of data.materials) $('kiMaterial').add(new Option(m.type + ' · ' + m.color + ' (' + m.id + ')', m.id));
-  const baseline30 = model.calculate(data);
+  const baseline30 = model.calculate(data, { horizon: 30 });
   // The other pages retain the snapshot and use the fixed 30-day base forecast.
   window.printPilotForecastRows = baseline30.products.map(p => {
     const m = data.materials.find(x => x.id === p.materialId);
@@ -899,7 +899,7 @@ document.querySelectorAll('.customerOrderStatus').forEach(select=>{const id=sele
       $(fields[key] + 'Value').textContent = fmt(options[key]) + (key === 'delay' ? ' Tage' : key === 'safety' ? ' kg' : ' %');
     }
     $('kiCase').textContent = names[active];
-    $('kiPeriod').textContent = date(result.start) + ' – ' + date(result.end) + ' · ' + options.horizon + ' Tage';
+    $('kiPeriod').textContent = date(result.start) + ' – ' + date(result.end) + ' · ' + (options.horizon === 28 ? '4 Wochen (28 Tage)' : options.horizon + ' Tage');
     $('kiUnits').textContent = fmt(result.units) + ' Stk.';
     $('kiUnitsDelta').textContent = (result.units - base.units >= 0 ? '+' : '') + fmt(result.units - base.units) + ' Stück gegenüber Basis';
     $('kiNeed').textContent = fmt(result.needKg, 1) + ' kg';

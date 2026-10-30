@@ -25,6 +25,18 @@ test('ML-Tageswerte sind vollständig, eindeutig und stimmen mit gelieferten 30/
   }
 });
 
+test('Vier Wochen zeigen genau 28 Tage ab dem fiktiven Datenstand', () => {
+  const result = calculate(data);
+  assert.equal(result.options.horizon, 28);
+  assert.equal(result.start, '2026-10-22');
+  assert.equal(result.end, '2026-11-18');
+  assert.equal(result.daily.length, 28);
+  const expected = data.forecast.daily_forecasts.filter(row => row.date <= result.end)
+    .reduce((sum, row) => sum + row.predicted_demand_units, 0);
+  assert.equal(result.units, expected);
+  assert.equal(calculate(data, { horizon: 30 }).units, data.forecast.totals['30_days'].predicted_demand_units_total);
+});
+
 test('Grammfaktoren, Ausgangsbestand und Materialsalden rechnen unabhängig nach', () => {
   const result = calculate(data, { horizon: 60, scrap: 12, stock: 75, demand: 135 });
   for (const m of result.materials) {
@@ -72,7 +84,7 @@ test('Überfällige Mengen bleiben draußen; spätere Zugänge verstecken frühe
     materials: [{ id: 'M', warehouseKg: 0, printerKg: 0, leadDays: 10 }],
     orders: [{ materialId: 'M', date: '2026-10-20', kg: 999 }, { materialId: 'M', date: '2026-11-01', kg: 100 }]
   };
-  const result = calculate(fixture, { scrap: 0, safety: 0 });
+  const result = calculate(fixture, { horizon: 30, scrap: 0, safety: 0 });
   const m = result.materials[0];
   assert.equal(m.overdueKg, 999);
   assert.equal(m.minKg, -10);
@@ -81,8 +93,8 @@ test('Überfällige Mengen bleiben draußen; spätere Zugänge verstecken frühe
   assert.equal(m.orderBy, '2026-10-12');
   assert.equal(m.urgent, true);
   assert.equal(m.endKg, 70);
-  assert.equal(calculate(fixture, { scrap: 0, safety: 0, delay: 14 }).extraKg, 24);
-  assert.equal(calculate(fixture, { demand: 0, safety: 0 }).extraKg, 0);
+  assert.equal(calculate(fixture, { horizon: 30, scrap: 0, safety: 0, delay: 14 }).extraKg, 24);
+  assert.equal(calculate(fixture, { horizon: 30, demand: 0, safety: 0 }).extraKg, 0);
 });
 
 test('Unzulässige Annahmen werden abgewiesen', () => {

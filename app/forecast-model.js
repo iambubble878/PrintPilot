@@ -3,7 +3,7 @@
   const dayMs = 86400000;
   const addDays = (date, days) => new Date(Date.parse(date + 'T00:00:00Z') + days * dayMs).toISOString().slice(0, 10);
   const difference = (a, b) => Math.round((Date.parse(a + 'T00:00:00Z') - Date.parse(b + 'T00:00:00Z')) / dayMs);
-  const defaults = Object.freeze({ horizon: 30, demand: 100, stock: 100, delay: 0, scrap: 5, safety: 3, material: 'all' });
+  const defaults = Object.freeze({ horizon: 28, demand: 100, stock: 100, delay: 0, scrap: 5, safety: 3, material: 'all' });
   const presets = Object.freeze({
     basis: { ...defaults },
     rush: { ...defaults, demand: 150 },
@@ -16,7 +16,7 @@
     for (const [key, min, max] of [['demand', 0, 300], ['stock', 0, 300], ['delay', 0, 90], ['scrap', 0, 100], ['safety', 0, 100]]) {
       if (!Number.isFinite(options[key]) || options[key] < min || options[key] > max) throw new Error('Ungültiger Szenariowert: ' + key);
     }
-    if (![30, 60, 90].includes(options.horizon)) throw new Error('Zeitraum muss 30, 60 oder 90 Tage sein.');
+    if (![28, 30, 60, 90].includes(options.horizon)) throw new Error('Zeitraum muss 28, 30, 60 oder 90 Tage sein.');
     if (options.material !== 'all' && !data.materials.some(m => m.id === options.material)) throw new Error('Unbekanntes Material.');
     const start = addDays(data.forecast.source.history_end, 1);
     const dates = Array.from({ length: options.horizon }, (_, i) => addDays(start, i));

@@ -4,8 +4,8 @@ Stand: 27.10.2026. Einstieg: `index.html` im Projektordner per Doppelklick öffn
 
 ## Vorführablauf
 
-1. Basisplanung zeigen: 30 Tage vom 22.10. bis 20.11.2026, 15.922 nachgefragte Stück, 1.200,5 kg Bedarf einschließlich 5 % Materialaufschlag. Die Reserve beträgt 3 kg je Material. Der zusätzliche Versorgungsvorschlag beträgt 502 kg; neun Materialien haben im Verlauf eine Fehlmenge.
-2. „Nachfrage +50 %“ wählen: Die auf Artikel und Tag gerundete Nachfrage steigt auf 23.969 Stück und 1.807,3 kg; der Zusatzvorschlag steigt auf 1.082 kg. Das sind Szenario-Annahmen und keine gelernten Werbeeffekte.
+1. Basisplanung zeigen: genau vier Wochen vom 22.10. bis 18.11.2026, 14.775 nachgefragte Stück, 1.114,6 kg Bedarf einschließlich 5 % Materialaufschlag. Die Reserve beträgt 3 kg je Material. Der zusätzliche Versorgungsvorschlag beträgt 425 kg; acht Materialien haben im Verlauf eine Fehlmenge. Die frühere 30-Tage-Ansicht bleibt über die Zeitraum-Auswahl erreichbar.
+2. „Nachfrage +50 %“ wählen: Die auf Artikel und Tag gerundete Nachfrage steigt für vier Wochen auf 22.241 Stück und 1.677,9 kg; der Zusatzvorschlag steigt auf 959 kg. Das sind Szenario-Annahmen und keine gelernten Werbeeffekte.
 3. „Lieferung +14 Tage“ und „Bestand nur 25 %“ vergleichen. Die Basislinie bleibt als Vergleich erhalten.
 4. 60 oder 90 Tage und ein einzelnes Material wählen. Alternativ einen Materialnamen in der Tabelle anklicken, etwa PLA Rot. Das Diagramm zeigt dann diese Variante statt einer Summe über unterschiedliche Materialien.
 5. Regler kombinieren. Filamentaufschlag und Reserve verändern die Materialplanung; sie verändern nicht die gespeicherte KI-Prognose.
@@ -66,3 +66,5 @@ Die Gesamtgrafik summiert verschiedene Materialien nur zur Übersicht. Fehlmenge
 ## Ergänzung vom 30.10.2026
 
 Diese Fassung wurde als Änderungsvorschlag für das bestehende GitHub-Dashboard mit dem historischen Rückblick aus `prognosen.json` zusammengeführt. Die KI-Simulation verwendet weiterhin die vorberechneten Gradient-Boosting-Werte ab 22.10.2026. Der Rückblick Januar–März 2026 stammt aus einem getrennten Random-Forest-Modell und beeinflusst weder die Simulation noch Kundenaufträge. `npm start` liefert nun auch `prognosen.json` aus; `npm run build` bettet das Rückblickskript in `index.html` ein. Die oben dokumentierten damaligen Aussagen über fehlenden Commit oder Push beziehen sich auf den Stand vom 27.10.2026.
+
+Die zusammengeführte Fassung liegt inzwischen auf `main`. Für die Vorführung ist jetzt **4 Wochen (28 Tage)** als Standard gewählt. Sie beginnt ausdrücklich am fiktiven Simulationsstart 22.10.2026 nach dem Datenstand 21.10.2026. Das ist keine rollierende Prognose ab dem heutigen Kalendertag. Die Kundenaufträge nutzen weiterhin die unveränderte 30-Tage-KI-Basis. Die 28-Tage-Summen werden aus den ersten 28 vorberechneten Tageswerten gebildet; die vorhandenen 30/60/90-Tage-Summen bleiben als Kontrollwerte erhalten.
