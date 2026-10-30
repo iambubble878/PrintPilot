@@ -15,7 +15,7 @@ Stand: 2026-10-30
 - Repository: https://github.com/iambubble878/PrintPilot.
 - Die bestehende lokale Webseite lag als `PrintPilot-GitHub`-Ordner und gleichlautende ZIP vor; alle zehn Dateien stimmten inhaltlich überein. Das Repository enthielt zuvor nur Projektdokumentation.
 - Der frühere Chat-Anhang `prognosen.json` enthält 1.080 historische Produkt-Tageswerte für Januar–März 2026. Training endete am 31.12.2025; der aus den Datensätzen neu berechnete MAE beträgt 5,83 Stück.
-- Die derzeitige Kundenauftrags-Empfehlung nutzt Bestand, offene Bestellungen und die eingebettete statistische 4-Wochen-Prognose. Sie nutzt weder den historischen Januar–März-Rücktest noch den im älteren Projekt-ZIP enthaltenen 30-Tage-KI-Simulator.
+- In GitHub-`main` wurde der Skriptfehler hinter „Analyse läuft“ behoben; diese Fassung nutzt weiterhin die statistische 4-Wochen-Prognose. Der separate Änderungsvorschlag aus `PrintPilot Projekt.zip` nutzt bei Kundenaufträgen die feste 30-Tage-KI-Basisprognose und zeigt außerdem einen 30/60/90-Tage-Simulator.
 
 ## Entscheidungen
 
@@ -27,6 +27,7 @@ Stand: 2026-10-30
 | 2026-10-30 | Bestehenden Webapp-Prototyp übernehmen | Der Nutzer hat die lokal vorhandene Webseite für die KI-Integration benannt. |
 | 2026-10-30 | Historische Prognose und Ist-Werte getrennt anzeigen | Der Rücktest für Januar–März 2026 ist keine aktuelle Bedarfsprognose. Produkt- und Materialzuordnung samt Gramm je Stück sind nicht bestätigt. |
 | 2026-10-30 | Lokalen Beispielport 8765 verwenden | Windows reserviert auf diesem PC Port 8000; der lokale HTTP-Abruf der Webseite und `prognosen.json` über 8765 wurde geprüft. |
+| 2026-10-30 | Ältere KI-Simulator-Fassung als getrennten Änderungsvorschlag prüfen | Sie enthält vorberechnete Gradient-Boosting-Tageswerte, Produktgewichte und Materialzuordnung; die historische Random-Forest-Datei bleibt ein eigener Rücktest. |
 | 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
 
 ## Quellen und Grenzen

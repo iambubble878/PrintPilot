@@ -1,5 +1,7 @@
 # Bestehende Webseite in das vorhandene GitHub-Repository übernehmen
 
+Stand 30.10.2026: Die Webseite liegt bereits auf `main`. Die ältere KI-Simulator-Fassung wird als gesonderter Änderungsvorschlag geprüft. Die folgenden Upload-Schritte sind für spätere lokale Änderungen gedacht; vorhandene Dateien und Historie nicht erneut durch eine ZIP ersetzen. Nach Änderungen unter `app/` zuerst `npm run build`, dann `npm test` ausführen und die erzeugte `index.html` mit committen.
+
 ## ZIP entpacken
 
 Den unveränderten Ordner `PrintPilot-GitHub` zuerst als ZIP sichern. Das vorhandene private Repository ist `iambubble878/PrintPilot`. Es enthält bereits Dokumentation, aber bislang keine Webseite. Deshalb die Repository-Dateien zuerst herunterladen und die **Inhalte** des Webseitenordners in diese Kopie übernehmen. Eine ZIP-Datei im Repository würde die Webseite nicht ausführen.

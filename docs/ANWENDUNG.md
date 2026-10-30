@@ -4,6 +4,10 @@
 
 Die linke Navigation öffnet die Bereiche Übersicht, Bedarfsprognose, Lagerbestand, Einkaufsplanung, Bestellungen, Kundenaufträge, Druckerflotte und 5-Jahres-Daten. Auf kleinen Bildschirmen lässt sich die Navigation über die Menütaste öffnen.
 
+## Aktive KI-Simulation
+
+In **Bedarfsprognose** zeigt der obere Bereich die vorberechneten KI-Tageswerte ab 22.10.2026. Wähle 30, 60 oder 90 Tage und bei Bedarf ein Material. Die Regler verändern nur die Szenario-Annahmen für Nachfrage, Startbestand, Lieferverzug, Materialaufschlag und Reserve. Die gespeicherten KI-Werte selbst werden dadurch nicht neu berechnet. Die Kundenaufträge verwenden die feste 30-Tage-Basisprognose und folgen den Reglern nicht. Einzelheiten und Grenzen stehen in [KI_PROGNOSE.md](KI_PROGNOSE.md).
+
 ## Historische KI-Prognose prüfen
 
 In **Bedarfsprognose** steht der Rückblick für Januar bis März 2026. „Alle 12 Produkte“ zeigt die gesamte Datei; die Produktauswahl zeigt die 90 Tageswerte eines Artikels. Die Karten und Tabellen unterscheiden prognostizierte und tatsächliche Stückzahlen. Die Abweichung ist Prognose minus Ist. Der mittlere absolute Fehler mittelt die absoluten Tagesfehler über die angezeigten Produkt-Tage.
@@ -39,6 +43,8 @@ Jeder der 100 Drucker zeigt vier Materialplätze. Der erste Platz basiert auf de
 
 ## Bedarfsprognose erklären und übernehmen
 
+Die folgenden Funktionen beschreiben die ältere 4-Wochen-Regressionsansicht. Sie ist im zusammengeführten Hauptdashboard ausgeblendet und steuert die aktive KI-Simulation nicht.
+
 - Die Farbprognose trennt gleiche Farben nach Filamenttyp (z. B. PLA Schwarz und PETG Schwarz). Auch die Produktprognose zeigt Filamenttyp, Farbe, Stückzahl und kg Filament für die nächsten vier Wochen.
 - Die Saisonübersicht enthält zehn Artikel: zwei mit interner Verkaufshistorie und berechneten Mengen sowie acht neue Ideen ohne Absatzhistorie. Für Ideen werden keine Absatz- oder kg-Werte erfunden.
 - Die externen Marktplatz-Trends zeigen zehn qualitative Artikelideen samt möglichem Filamenttyp und Farbe. Sie basieren auf öffentlichen Such-/Popularitätssignalen und werden nicht als interne Verkaufsprognose gerechnet.
@@ -51,4 +57,4 @@ Jeder der 100 Drucker zeigt vier Materialplätze. Der erste Platz basiert auf de
 
 Die fünf Auftragszeilen sind anonymisierte Beispieldaten; Kundennamen oder Kontaktdaten sind nicht enthalten. Der Status lässt sich je Zeile über ein Auswahlfeld ändern. Es stehen die Optionen „Neu eingegangen“, „In Planung“, „In Bearbeitung“, „Wartet auf Material“, „Versandbereit“, „Abgeschlossen“ und „Storniert“ bereit. Über „Eigener Status …“ kann ein freier Status eingetragen werden. Änderungen werden lokal im Browser gespeichert.
 
-Die KI-Status-Empfehlung vergleicht den Materialbedarf des Auftrags mit dem verfügbaren Lager- und Druckerbestand sowie offenen Bestellungen. Zusätzlich fließt die interne 4-Wochen-Prognose für dasselbe Material und dieselbe Farbe ein. Die Begründung nennt verfügbare, offene und prognostizierte Mengen. Ein Klick auf **Empfehlung übernehmen** trägt den vorgeschlagenen Status in das manuell änderbare Statusfeld ein. Die Empfehlung prüft keine echte Produktionsaufnahme und ist kein selbstlernendes Live-Modell.
+Die KI-Status-Empfehlung vergleicht den Materialbedarf des Auftrags mit dem verfügbaren Lager- und Druckerbestand sowie offenen Bestellungen. Zusätzlich fließt die feste 30-Tage-KI-Basisprognose für dasselbe Material und dieselbe Farbe ein. Die Begründung nennt verfügbare, offene und prognostizierte Mengen. Ein Klick auf **Empfehlung übernehmen** trägt den vorgeschlagenen Status in das manuell änderbare Statusfeld ein. Die Empfehlung prüft keine echte Produktionsaufnahme und ist kein selbstlernendes Live-Modell.

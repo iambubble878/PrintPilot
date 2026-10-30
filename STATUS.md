@@ -4,22 +4,22 @@ Stand: 2026-10-30
 
 | Bereich | Stand |
 | --- | --- |
-| Phase | Bestehenden Webapp-Prototyp und historischen KI-Rücktest übernehmen |
+| Phase | KI-Simulator-Fassung aus dem älteren Projekt-ZIP mit historischem Rücktest zusammenführen |
 | GitHub | Privates Repository iambubble878/PrintPilot angelegt |
 | Dokumentation | Grundstruktur vorhanden |
-| Anwendung | Lokaler statischer PrintPilot-Prototyp vorhanden; Übernahme als Änderungsvorschlag vorbereitet |
+| Anwendung | GitHub-`main`: Kundenauftrags-Skriptfehler korrigiert, weiterhin statistische 4-Wochen-Rechnung. Änderungsvorschlag: trainierte KI-Tageswerte und 30/60/90-Tage-Simulation im bestehenden Dashboard. |
 | Anforderungen | Team und qualitative Ziele bestätigt; Funktionen und messbare Kriterien offen |
-| Technologie / Architektur | Bestehendes HTML/CSS/JavaScript ohne Backend; historischer JSON-Rücktest getrennt von aktueller Planung |
-| Tests | JSON-Struktur und MAE geprüft; JavaScript-Syntax und lokaler HTTP-Abruf geprüft; visuelle Browserprüfung noch offen |
+| Technologie / Architektur | HTML/CSS/JavaScript ohne Backend; vorberechnete Gradient-Boosting-Tageswerte für Simulation und getrennte historische Random-Forest-Rückblicksdaten |
+| Tests | 15 lokale Node-Tests bestanden; Build und Inline-Syntax geprüft; visuelle Browserprüfung noch offen |
 | Veröffentlichung | Keine Anwendung veröffentlicht |
 
 ## Nächster Schritt
 
-Änderungsvorschlag prüfen, Rückblick und bisherige Funktionen im Browser testen und dann in `main` übernehmen. Für eine spätere Nutzung von KI-Werten in aktuellen Bestellvorschlägen müssen Produkt-ID, Material-ID und Gramm pro Stück verifiziert werden. Bestellentscheidungen bleiben beim Einkauf.
+Änderungsvorschlag im Browser prüfen: Kundenaufträge, 30/60/90-Tage-Simulation, historischer Rückblick und übrige Seiten. Danach über die Übernahme in `main` entscheiden. Für reale Beschaffungsentscheidungen müssen Produkt-Material-Zuordnung, Gramm pro Stück, Datenqualität und Aktualität fachlich bestätigt werden. Bestellentscheidungen bleiben beim Einkauf.
 
 ## Einschränkungen
 
-Der frühere ZIP-Anhang und die PDF konnten über den verfügbaren Page-Dateileser nicht gelesen werden. Der aktuelle Stand ersetzt keine bereits vorhandene, bislang nicht übernommene Projektarbeit.
+Das nun bereitgestellte `PrintPilot Projekt.zip` konnte lokal gelesen werden; seine `.git`-Daten, temporären Dateien und erzeugten Dokumente werden nicht in den Änderungsvorschlag übernommen. Die früher verlinkte PDF konnte über den Page-Dateileser nicht gelesen werden. Die Prognosedaten sind synthetisch und auf den festen Stand 21.10.2026 bezogen.
 
 ## Lokale Git-Verknüpfung
 

@@ -1,0 +1,11 @@
+{
+  "name": "printpilot-pitch-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-presentation.mjs",
+    "start": "node server.mjs",
+    "test": "node --test --test-isolation=none"
+  }
+}
