@@ -13,10 +13,10 @@ Es ist keine Installation und kein Build erforderlich. `index.html` kann direkt 
 Für einen lokalen Webserver:
 
 ```bash
-python -m http.server 8000
+python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Danach im Browser `http://localhost:8000` öffnen.
+Danach im Browser `http://localhost:8765` öffnen. Auf diesem Windows-PC ist Port 8000 reserviert; falls 8765 später belegt ist, kann ein anderer freier Port verwendet werden.
 
 Für die automatische Anzeige des historischen KI-Rücktests ist der lokale Webserver nötig, weil Browser beim direkten Öffnen einer HTML-Datei den Zugriff auf `prognosen.json` häufig sperren. Alternativ kann die Datei in der Bedarfsprognose über „JSON-Datei auswählen“ geladen werden.
 

@@ -25,6 +25,7 @@ Stand: 2026-10-30
 | 2026-10-22 | Erst Planung, dann Technologiewahl | Anforderungen sind noch nicht bestätigt. |
 | 2026-10-30 | Bestehenden Webapp-Prototyp übernehmen | Der Nutzer hat die lokal vorhandene Webseite für die KI-Integration benannt. |
 | 2026-10-30 | Historische Prognose und Ist-Werte getrennt anzeigen | Der Rücktest für Januar–März 2026 ist keine aktuelle Bedarfsprognose. Produkt- und Materialzuordnung samt Gramm je Stück sind nicht bestätigt. |
+| 2026-10-30 | Lokalen Beispielport 8765 verwenden | Windows reserviert auf diesem PC Port 8000; der lokale HTTP-Abruf der Webseite und `prognosen.json` über 8765 wurde geprüft. |
 | 2026-10-22 | CHANGELOG und Git gemeinsam pflegen | Inhaltliche Begründung und technische Historie bleiben nachvollziehbar. |
 
 ## Quellen und Grenzen

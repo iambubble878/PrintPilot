@@ -2,6 +2,14 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – Lokalen Startport korrigiert
+
+- README.md, docs/ANWENDUNG.md und docs/GITHUB-PAGES.md: Beispielbefehl und URL von Port 8000 auf 8765 geändert und Bindung an den lokalen Rechner ergänzt.
+- MEMORY.md: den auf diesem Windows-PC reservierten Port 8000 und den geprüften Ersatzport festgehalten.
+- CHANGELOG.md: diese Korrektur dokumentiert.
+- Grund: `python -m http.server 8000` scheiterte mit WinError 10013, weil Windows Port 8000 ausschließt.
+- Prüfung: HTTP-Abruf von `index.html` und `prognosen.json` über `127.0.0.1:8765` ergab jeweils Status 200. Eine visuelle Browserprüfung wurde dabei nicht durchgeführt.
+
 ## 2026-10-30 – Bestehende Webseite und historischer KI-Rücktest
 
 - `index.html` und `historical-prognosen.js`: Rückblick in der vorhandenen Bedarfsprognose mit Produktauswahl, Monats- und Tageswerten sowie berechnetem MAE ergänzt.

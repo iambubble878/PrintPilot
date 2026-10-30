@@ -19,7 +19,7 @@ Den unveränderten Ordner `PrintPilot-GitHub` zuerst als ZIP sichern. Das vorhan
 
 ## Lokal prüfen
 
-Im Webseitenordner `python -m http.server 8000` ausführen und `http://localhost:8000` öffnen. Unter **Bedarfsprognose** prüfen, ob der Rücktest 01.01.–31.03.2026 geladen wird, zwölf Produkte auswählbar sind, der Gesamt-MAE 5,83 Stück beträgt und Monats- sowie Tageswerte angezeigt werden. Außerdem die bestehende 4-Wochen-Prognose, Einkaufsplanung und Navigation prüfen. Bei direktem Öffnen von `index.html` die Datei `prognosen.json` im Rückblick auswählen.
+Im Webseitenordner `python -m http.server 8765 --bind 127.0.0.1` ausführen und `http://localhost:8765` öffnen. Auf diesem Windows-PC ist Port 8000 reserviert. Unter **Bedarfsprognose** prüfen, ob der Rücktest 01.01.–31.03.2026 geladen wird, zwölf Produkte auswählbar sind, der Gesamt-MAE 5,83 Stück beträgt und Monats- sowie Tageswerte angezeigt werden. Außerdem die bestehende 4-Wochen-Prognose, Einkaufsplanung und Navigation prüfen. Bei direktem Öffnen von `index.html` die Datei `prognosen.json` im Rückblick auswählen.
 
 ## GitHub Pages (optional)
 
