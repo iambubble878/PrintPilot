@@ -128,6 +128,6 @@
     .catch(() => {
       status.textContent = location.protocol === 'file:'
         ? 'Beim direkten Öffnen der HTML-Datei bitte oben prognosen.json auswählen.'
-        : 'prognosen.json konnte nicht geladen werden. Bitte Datei und lokalen Webserver prüfen oder die JSON-Datei oben auswählen.';
+        : 'prognosen.json konnte nicht geladen werden. Bitte Seite neu laden oder die JSON-Datei oben auswählen.';
     });
 }());

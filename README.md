@@ -8,17 +8,9 @@ Das Projekt ist ein Kursprojekt von Carolin, Meik, Tamas und Lilia. Bestellungen
 
 ## Schnellstart
 
-Es ist keine Installation und kein Build erforderlich. `index.html` kann direkt im aktuellen Browser geöffnet werden.
+Die Anwendung ist unter [iambubble878.github.io/PrintPilot](https://iambubble878.github.io/PrintPilot/) online erreichbar. Einfach den Link im Browser öffnen; eine Installation ist nicht erforderlich. Der historische KI-Rücktest lädt seine Datei `prognosen.json` dort automatisch.
 
-Für einen lokalen Webserver:
-
-```bash
-python -m http.server 8765 --bind 127.0.0.1
-```
-
-Danach im Browser `http://localhost:8765` öffnen. Auf diesem Windows-PC ist Port 8000 reserviert; falls 8765 später belegt ist, kann ein anderer freier Port verwendet werden.
-
-Für die automatische Anzeige des historischen KI-Rücktests ist der lokale Webserver nötig, weil Browser beim direkten Öffnen einer HTML-Datei den Zugriff auf `prognosen.json` häufig sperren. Alternativ kann die Datei in der Bedarfsprognose über „JSON-Datei auswählen“ geladen werden.
+Falls `index.html` ausnahmsweise direkt als lokale Datei geöffnet wird, kann `prognosen.json` in der Bedarfsprognose über „JSON-Datei auswählen“ geladen werden.
 
 Für Änderungen an den Simulator-Quelldateien erzeugt `npm run build` die `index.html` erneut. `npm test` prüft die Modell- und Planungsrechnung. Für das bloße Öffnen der Seite sind beide Befehle nicht nötig.
 
@@ -53,7 +45,7 @@ PrintPilot/
 ├── tools/                         # Import und Build der Einzeldatei
 ├── test/                          # lokale Modell- und Seitenprüfungen
 ├── package.json                   # Build- und Testbefehle ohne externe Pakete
-├── server.mjs                     # optionaler lokaler Node-Server
+├── server.mjs                     # optionales Werkzeug für die Entwicklung
 ├── README.md                      # Projektübersicht und Schnellstart
 ├── CHANGELOG.md                   # dokumentierte Änderungen
 ├── .gitignore                     # typische lokale Dateien ausschließen

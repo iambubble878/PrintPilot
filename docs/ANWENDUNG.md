@@ -12,7 +12,7 @@ In **Bedarfsprognose** zeigt der obere Bereich standardmäßig die vier Wochen v
 
 In **Bedarfsprognose** steht der Rückblick für Januar bis März 2026. „Alle 12 Produkte“ zeigt die gesamte Datei; die Produktauswahl zeigt die 90 Tageswerte eines Artikels. Die Karten und Tabellen unterscheiden prognostizierte und tatsächliche Stückzahlen. Die Abweichung ist Prognose minus Ist. Der mittlere absolute Fehler mittelt die absoluten Tagesfehler über die angezeigten Produkt-Tage.
 
-Bei einem Start über `http://localhost:8765` lädt die Ansicht `prognosen.json` automatisch. Der lokale Server wird im Webseitenordner mit `python -m http.server 8765 --bind 127.0.0.1` gestartet. Wenn `index.html` direkt im Browser geöffnet wurde, kann die Datei über **JSON-Datei auswählen** geladen werden. Die Werte sind ein historischer Test und ändern keine aktuelle Einkaufsliste.
+Auf der [Online-Seite](https://iambubble878.github.io/PrintPilot/) lädt die Ansicht `prognosen.json` automatisch. Wenn `index.html` direkt als lokale Datei geöffnet wurde, kann die Datei über **JSON-Datei auswählen** geladen werden. Die Werte sind ein historischer Test und ändern keine aktuelle Einkaufsliste.
 
 ## Lagerbestand und Historie
 

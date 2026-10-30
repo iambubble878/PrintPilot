@@ -16,6 +16,8 @@ Stand: 2026-10-30
 - [x] KI-Simulator aus `PrintPilot Projekt.zip` mit dem historischen Rückblick in einer Arbeitskopie zusammenführen und die vorhandenen 15 Tests ausführen.
 - [x] KI-Simulator-Fassung über Pull Request #3 in `main` übernehmen.
 - [x] Vier Wochen (28 Tage) als Standardhorizont für den fiktiven Simulationsstart ergänzen und 30 Tage für Kundenaufträge beibehalten.
+- [x] GitHub-Pages-Adresse für die Online-Version vom Nutzer erhalten; Nutzungsanleitung auf den Online-Link umstellen.
+- [ ] Online-Version auf GitHub Pages visuell und funktional prüfen.
 - [ ] Rückblick, Produktauswahl und bisherige Dashboard-Funktionen visuell im Browser prüfen.
 - [ ] KI-Simulator und Kundenaufträge im Browser visuell prüfen.
 - [ ] Produkt-zu-Material-Zuordnung und Gramm je Stück für eine reale Beschaffungsplanung fachlich verifizieren.

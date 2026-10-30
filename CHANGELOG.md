@@ -2,6 +2,14 @@
 
 Jede Änderung erhält einen datierten Eintrag. Neue Einträge stehen oben. Zusammengehörige Dateien dürfen in einem Eintrag zusammengefasst werden, müssen darin aber vollständig genannt sein. Git-Commits halten die genaue Änderungshistorie fest.
 
+## 2026-10-30 – Online-Version als Schnellstart
+
+- `README.md`, `docs/ANWENDUNG.md`, `docs/GITHUB-PAGES.md`: die vom Nutzer gemeldete GitHub-Pages-Adresse als Einstieg dokumentiert und localhost-Anleitungen aus der Nutzung entfernt; veraltete Hinweise zur Erstübernahme des Repositorys ersetzt.
+- `historical-prognosen.js`, `index.html`: Fehlermeldung beim Laden von `prognosen.json` auf die Online-Nutzung angepasst; `index.html` aus der Quelle neu gebaut.
+- `STATUS.md`, `TODO.md`, `MEMORY.md`, `CHANGELOG.md`: Veröffentlichung und noch offene Sichtprüfung festgehalten.
+- Grund: Die Webseite ist laut Nutzer online erreichbar und soll ohne lokalen Server verwendet werden.
+- Prüfung: Dokumentation und Quelltext auf aktive localhost-Hinweise durchsucht; `npm run build` und `npm test` ausgeführt. Der öffentliche Seitenaufruf konnte mit dem verfügbaren Web-Abrufwerkzeug nicht bestätigt werden.
+
 ## 2026-10-30 – Vier Wochen als fiktive Standardvorführung
 
 - `app/forecast-model.js`: 28 Tage als Standard und zulässigen Horizont ergänzt; 30/60/90 Tage bleiben verfügbar.
