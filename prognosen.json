@@ -1,0 +1,6492 @@
+{
+  "projekt": "PrintPilot",
+  "modell": "RandomForestRegressor",
+  "trainingsende": "2025-12-31",
+  "prognose_start": "2026-01-01",
+  "prognose_ende": "2026-03-31",
+  "test_mae": 5.83,
+  "test_rmse": 7.63,
+  "baseline_mae": 10.16,
+  "prognosen": [
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.89,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.78,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.16,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 24.43,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 12.18,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 26.53,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 46.4,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.07,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.24,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.02,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.86,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-01",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.84,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 66.43,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 40.52,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.82,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 24.2,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.8,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 26.66,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 45.92,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 11.91,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 21.72,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 25.07,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.08,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-02",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.0,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 75.26,
+      "tatsaechlich_stueck": 73
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 53.63,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.54,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 26.5,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.01,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 41.43,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.47,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 11.08,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.42,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.05,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 23.86,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-03",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.16,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 41.59,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.18,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.64,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 20.58,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.27,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 27.69,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 28.73,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 9.86,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 20.6,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 22.82,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 11.18,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-04",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.53,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.73,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.15,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.58,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 24.22,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.16,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.23,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 40.79,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.53,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 34.03,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.88,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.1,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-05",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.81,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.09,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.94,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.2,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 30.19,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.53,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.12,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.11,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.6,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.36,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.0,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.94,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-06",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.36,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.64,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.83,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.24,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 29.57,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.93,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.1,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.08,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 14.19,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.13,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.23,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.93,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-07",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.67,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.26,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.05,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.85,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 27.32,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 12.25,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 29.77,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.76,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.92,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.79,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.38,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.55,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-08",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.71,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.5,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.94,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.24,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 29.53,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.91,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.58,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.4,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.02,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 21.76,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.31,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.85,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-09",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.96,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 67.55,
+      "tatsaechlich_stueck": 74
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.33,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.46,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 31.28,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.07,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.68,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.04,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 15.18,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 33.09,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 32.46,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.68,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-10",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.86,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 46.45,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 40.46,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 7.48,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 21.93,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.9,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 25.94,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 26.15,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 10.64,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 22.1,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 25.58,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 10.95,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-11",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.1,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 64.12,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 37.77,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.74,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 27.89,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.98,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.48,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 29.81,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 10.43,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 34.77,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.57,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 12.25,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-12",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.87,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 57.79,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 39.34,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.11,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 28.53,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.35,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 40.21,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 36.09,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 8.59,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.44,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.11,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 12.78,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-13",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.79,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.42,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.15,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.2,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 25.36,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.85,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 41.11,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 40.86,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 9.97,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.01,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 34.64,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.36,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-14",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.51,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.07,
+      "tatsaechlich_stueck": 72
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.76,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 17.2,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 28.87,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.04,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 40.31,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.62,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 15.14,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.71,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.2,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.06,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-15",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.8,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.31,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.67,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 18.1,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 31.13,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.18,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.14,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 32.8,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 15.04,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 19.34,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.11,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.76,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-01-16",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.14,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 63.59,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 53.52,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.92,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 31.75,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.48,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.56,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.83,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 14.33,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.59,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 32.97,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 23.77,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-01-17",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.88,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 43.47,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 37.52,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 8.9,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 22.14,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.46,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 25.01,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 30.4,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.55,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 21.5,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 21.34,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 13.22,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-18",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.0,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.58,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 37.42,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.57,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 25.98,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.91,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.29,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 43.38,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 15.61,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.25,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.2,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 13.14,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-19",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.21,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 50.38,
+      "tatsaechlich_stueck": 61
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.54,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 17.2,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 25.6,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.8,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.63,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.05,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 16.77,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.83,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.38,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 16.63,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-20",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.91,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.48,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.94,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.78,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 25.53,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.81,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 34.5,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 35.32,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 16.01,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.86,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.78,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.59,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-21",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.42,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 64.46,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.17,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.87,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 28.76,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.78,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 37.12,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 33.64,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 14.86,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.32,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.69,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.51,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-22",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.66,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.95,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 39.38,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.35,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 32.21,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.96,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.35,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.15,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.69,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 18.46,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.61,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.71,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-23",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.96,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 66.22,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 56.0,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.5,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 32.87,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.1,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 47.14,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 46.36,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.64,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.97,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 37.94,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 23.34,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-24",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.29,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 45.9,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 36.47,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.18,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 27.97,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 4.89,
+      "tatsaechlich_stueck": 4
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.44,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 30.43,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.4,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.24,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 25.09,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 9.58,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-25",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.65,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 64.91,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 35.24,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.65,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 23.31,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.71,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.02,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 44.04,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.29,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.22,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.51,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.87,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-26",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.31,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 59.79,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.54,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.0,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 26.81,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.38,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.83,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.35,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.36,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.47,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.28,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.24,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-27",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.15,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.62,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.64,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.42,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 26.73,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.97,
+      "tatsaechlich_stueck": 4
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 34.17,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 34.2,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.52,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 24.93,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.8,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.76,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-28",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.03,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.03,
+      "tatsaechlich_stueck": 75
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.21,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.85,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 26.37,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.16,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 34.31,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 31.66,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 12.92,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.1,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.2,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.56,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-01-29",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.35,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 54.15,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 40.69,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.73,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 26.32,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.8,
+      "tatsaechlich_stueck": 4
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 34.06,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 34.82,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 9.41,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 23.2,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.5,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.81,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-01-30",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.15,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 64.3,
+      "tatsaechlich_stueck": 87
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 55.11,
+      "tatsaechlich_stueck": 61
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.17,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 25.36,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.16,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 45.75,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 40.47,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 10.56,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.08,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 32.22,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 21.75,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-01-31",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.48,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 46.45,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 37.6,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 8.22,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 37.65,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 5.3,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.8,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.03,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 13.48,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 19.53,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 16.24,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 8.97,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-02-01",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 9.02,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 66.37,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.34,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.12,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 50.9,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.0,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.12,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 42.63,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 25.89,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.73,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 27.42,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.34,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-02",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.86,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 59.95,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.8,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.28,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 53.77,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.19,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.92,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.56,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 26.26,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.56,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.38,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.4,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-03",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.86,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.96,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.84,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.09,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 48.37,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.27,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.59,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 35.25,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 23.41,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.17,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.15,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 16.86,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-02-04",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.41,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 66.56,
+      "tatsaechlich_stueck": 79
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 40.93,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.67,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 53.13,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.72,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.53,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.77,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 19.91,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 23.32,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 27.51,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.92,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-05",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.99,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 65.13,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 37.72,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.44,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 60.14,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.35,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 40.41,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.37,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 18.81,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 25.2,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 24.6,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.03,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-06",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.83,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 66.51,
+      "tatsaechlich_stueck": 65
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 48.69,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.66,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 60.78,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.28,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 49.89,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.79,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 19.73,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.47,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.63,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.93,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-07",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.35,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 49.99,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.09,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.65,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 38.38,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 4.57,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 29.76,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 30.85,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 18.73,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 25.74,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 24.06,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 14.96,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-08",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.65,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.32,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.62,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.63,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 50.63,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.22,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.25,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.23,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 24.9,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.54,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.97,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 23.13,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-02-09",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.26,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 56.16,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.33,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.45,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 47.37,
+      "tatsaechlich_stueck": 62
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.81,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.1,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 36.83,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 25.5,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.87,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 34.73,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.78,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-10",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.28,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 52.46,
+      "tatsaechlich_stueck": 61
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.17,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.49,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 43.83,
+      "tatsaechlich_stueck": 68
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.62,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.03,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 35.18,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 28.35,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.62,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.7,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.44,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-11",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.1,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.03,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.06,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.74,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 47.37,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.55,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.71,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.15,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 25.95,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 35.26,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.84,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.21,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-12",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.34,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 52.42,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.11,
+      "tatsaechlich_stueck": 61
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.51,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 54.24,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.46,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.97,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.3,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 23.08,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 35.39,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 34.31,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.59,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-02-13",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.03,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 57.48,
+      "tatsaechlich_stueck": 85
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.32,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.14,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 56.76,
+      "tatsaechlich_stueck": 61
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.34,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 42.68,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 46.87,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 25.1,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 34.0,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 39.44,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.13,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-14",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.44,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 48.01,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 38.42,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.06,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 34.65,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.92,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.25,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 25.72,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 17.43,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 26.53,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 25.19,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 13.0,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-15",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.88,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 52.66,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.29,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.97,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 44.79,
+      "tatsaechlich_stueck": 68
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.64,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.63,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 33.73,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 26.06,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.43,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 34.85,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 14.0,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-16",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.88,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 50.84,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.7,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.8,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 43.89,
+      "tatsaechlich_stueck": 59
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.36,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.76,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 32.46,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 23.5,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.48,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.81,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.4,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-02-17",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.58,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 50.5,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.45,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.56,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 44.94,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.89,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.9,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 34.21,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 21.74,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 26.58,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.76,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.46,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-02-18",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.67,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 50.47,
+      "tatsaechlich_stueck": 71
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.51,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.42,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 50.14,
+      "tatsaechlich_stueck": 65
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 5.35,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 39.16,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 43.14,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 23.83,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.15,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.31,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.27,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-19",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.38,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 59.41,
+      "tatsaechlich_stueck": 75
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.12,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.97,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 60.13,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.39,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.69,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 49.59,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 26.47,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.64,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.44,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.53,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-02-20",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 20.88,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 57.76,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.85,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.2,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 63.55,
+      "tatsaechlich_stueck": 65
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.03,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.93,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 50.27,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 28.95,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.41,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 38.21,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.49,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-21",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 21.05,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 44.54,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 35.05,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 7.36,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 38.75,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.85,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 27.53,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 32.24,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 24.08,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.87,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.9,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 11.13,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-02-22",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.52,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 56.61,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.14,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.43,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 51.95,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.0,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.0,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.46,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 22.71,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.2,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.92,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.69,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-02-23",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.15,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 55.36,
+      "tatsaechlich_stueck": 72
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.66,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.25,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 48.97,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.8,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.42,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 34.32,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 22.51,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.08,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.05,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.45,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-24",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.96,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.59,
+      "tatsaechlich_stueck": 68
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.94,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.3,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 45.93,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.3,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 40.81,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 34.63,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 23.77,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 28.13,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 34.03,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 16.66,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-25",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.86,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.19,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.01,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.25,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 46.46,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.49,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 38.54,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 44.81,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 24.7,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 34.58,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.15,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.2,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-02-26",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.24,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 59.63,
+      "tatsaechlich_stueck": 74
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.07,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.51,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 52.36,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.89,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 37.06,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 42.19,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 26.28,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 33.4,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.01,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.28,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-02-27",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.22,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.68,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.03,
+      "tatsaechlich_stueck": 54
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.04,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 55.27,
+      "tatsaechlich_stueck": 63
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.09,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 39.96,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 41.47,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 28.07,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.71,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.88,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.54,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-02-28",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.9,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.11,
+      "tatsaechlich_stueck": 66
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 35.71,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 5.64,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 68.67,
+      "tatsaechlich_stueck": 95
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.36,
+      "tatsaechlich_stueck": 4
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 24.8,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 30.97,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 30.88,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.12,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.74,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.12,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-01",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.05,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.82,
+      "tatsaechlich_stueck": 80
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.4,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.04,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 94.13,
+      "tatsaechlich_stueck": 98
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.34,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.41,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.85,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 39.24,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 38.61,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.14,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.11,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-03-02",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 20.47,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 52.84,
+      "tatsaechlich_stueck": 78
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 44.03,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.67,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 98.59,
+      "tatsaechlich_stueck": 101
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.56,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.86,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.04,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 41.09,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 35.06,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.07,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.68,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-03",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.15,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 54.15,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.51,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.19,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 96.54,
+      "tatsaechlich_stueck": 100
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.78,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.43,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 35.18,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 43.43,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 33.85,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.39,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.83,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-04",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.25,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 55.21,
+      "tatsaechlich_stueck": 70
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.83,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 8.32,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 77.97,
+      "tatsaechlich_stueck": 95
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.19,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.58,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 40.57,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 46.95,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 35.03,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.36,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.12,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-05",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.42,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.11,
+      "tatsaechlich_stueck": 74
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.55,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.49,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 82.16,
+      "tatsaechlich_stueck": 95
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.44,
+      "tatsaechlich_stueck": 3
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 32.05,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 42.33,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 48.22,
+      "tatsaechlich_stueck": 53
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.85,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 26.87,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.74,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-06",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.55,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 70.38,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 50.61,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.77,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 98.44,
+      "tatsaechlich_stueck": 110
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.62,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 48.03,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 43.54,
+      "tatsaechlich_stueck": 54
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 53.03,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.7,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.95,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 24.13,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-07",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.85,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 42.47,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 34.74,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.37,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 74.0,
+      "tatsaechlich_stueck": 71
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.96,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 23.76,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 29.4,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 28.36,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 21.14,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 22.36,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.93,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-08",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.13,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.77,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 46.48,
+      "tatsaechlich_stueck": 54
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 15.06,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 85.5,
+      "tatsaechlich_stueck": 87
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.15,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 29.04,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 44.5,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 47.69,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.14,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 33.75,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 14.68,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-09",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.1,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 65.38,
+      "tatsaechlich_stueck": 84
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.82,
+      "tatsaechlich_stueck": 59
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.3,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 87.65,
+      "tatsaechlich_stueck": 89
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.8,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.63,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 41.64,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 47.25,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.46,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.91,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.65,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-10",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.83,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.45,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.55,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.29,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 92.0,
+      "tatsaechlich_stueck": 113
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.12,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.48,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 41.65,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 47.5,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 33.74,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.19,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.96,
+      "tatsaechlich_stueck": 26
+    },
+    {
+      "datum": "2026-03-11",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.75,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 57.41,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.98,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.51,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 98.07,
+      "tatsaechlich_stueck": 94
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.71,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.29,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 40.18,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 45.9,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.86,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.06,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.69,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-12",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.08,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 58.68,
+      "tatsaechlich_stueck": 54
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 41.83,
+      "tatsaechlich_stueck": 56
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.23,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 88.83,
+      "tatsaechlich_stueck": 95
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 5.91,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 33.4,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 41.46,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 47.81,
+      "tatsaechlich_stueck": 45
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.53,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 32.16,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.86,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-13",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.36,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 63.44,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 48.54,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.2,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 98.69,
+      "tatsaechlich_stueck": 81
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.2,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 39.69,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 45.48,
+      "tatsaechlich_stueck": 62
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 49.79,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.19,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 36.8,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 21.72,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-14",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.99,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 46.04,
+      "tatsaechlich_stueck": 52
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 39.57,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 9.72,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 61.86,
+      "tatsaechlich_stueck": 77
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.42,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 25.36,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.79,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 35.23,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 18.84,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 23.68,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 14.72,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-15",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.23,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.7,
+      "tatsaechlich_stueck": 79
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.67,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.91,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 91.51,
+      "tatsaechlich_stueck": 107
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.78,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 25.28,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.35,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 40.3,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.92,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 27.62,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.06,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-16",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.76,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.93,
+      "tatsaechlich_stueck": 71
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 43.91,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.23,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 91.17,
+      "tatsaechlich_stueck": 86
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 5.66,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 27.14,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.37,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 45.23,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 29.5,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.59,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 21.57,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-17",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.85,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 54.27,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.38,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.57,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 86.4,
+      "tatsaechlich_stueck": 97
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.0,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 31.75,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.46,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 43.99,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.22,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 32.21,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.35,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-18",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.5,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.85,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 48.3,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.27,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 79.7,
+      "tatsaechlich_stueck": 90
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.33,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.57,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.72,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 41.8,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.93,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.34,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.26,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-19",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.54,
+      "tatsaechlich_stueck": 24
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.2,
+      "tatsaechlich_stueck": 62
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.41,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.86,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 82.17,
+      "tatsaechlich_stueck": 93
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 4.71,
+      "tatsaechlich_stueck": 14
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.86,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 37.95,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 43.44,
+      "tatsaechlich_stueck": 50
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.7,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 31.25,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.08,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-03-20",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.64,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 60.88,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 47.34,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 16.1,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 100.71,
+      "tatsaechlich_stueck": 108
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.69,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.09,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 39.49,
+      "tatsaechlich_stueck": 47
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 43.75,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 30.91,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 37.08,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 22.75,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-21",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.31,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 50.0,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 35.45,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.74,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 68.32,
+      "tatsaechlich_stueck": 80
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.22,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 29.44,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 29.17,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 36.27,
+      "tatsaechlich_stueck": 30
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 24.18,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 20.01,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 16.65,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-22",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 12.26,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.43,
+      "tatsaechlich_stueck": 67
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 40.06,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.8,
+      "tatsaechlich_stueck": 10
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 83.93,
+      "tatsaechlich_stueck": 95
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 10.36,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 39.42,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 48.24,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 37.47,
+      "tatsaechlich_stueck": 49
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 36.7,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 35.87,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.86,
+      "tatsaechlich_stueck": 17
+    },
+    {
+      "datum": "2026-03-23",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 17.06,
+      "tatsaechlich_stueck": 25
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.05,
+      "tatsaechlich_stueck": 75
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.52,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 11.63,
+      "tatsaechlich_stueck": 12
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 87.23,
+      "tatsaechlich_stueck": 98
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.14,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.04,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 49.94,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 44.43,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 38.65,
+      "tatsaechlich_stueck": 33
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 37.93,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 19.43,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-24",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 14.57,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 56.69,
+      "tatsaechlich_stueck": 69
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 48.62,
+      "tatsaechlich_stueck": 51
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.95,
+      "tatsaechlich_stueck": 20
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 91.23,
+      "tatsaechlich_stueck": 91
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.73,
+      "tatsaechlich_stueck": 7
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 35.14,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 50.65,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 44.66,
+      "tatsaechlich_stueck": 55
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 35.02,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 35.17,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 18.77,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-25",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.27,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 55.07,
+      "tatsaechlich_stueck": 83
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.21,
+      "tatsaechlich_stueck": 68
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.84,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 92.1,
+      "tatsaechlich_stueck": 101
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 9.17,
+      "tatsaechlich_stueck": 9
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.68,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 45.39,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 46.41,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.25,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 29.33,
+      "tatsaechlich_stueck": 35
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.74,
+      "tatsaechlich_stueck": 19
+    },
+    {
+      "datum": "2026-03-26",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 18.74,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 53.28,
+      "tatsaechlich_stueck": 65
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 42.88,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 10.66,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 92.98,
+      "tatsaechlich_stueck": 114
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 8.02,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 34.89,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 46.64,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 50.03,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 33.42,
+      "tatsaechlich_stueck": 37
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.21,
+      "tatsaechlich_stueck": 21
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.48,
+      "tatsaechlich_stueck": 18
+    },
+    {
+      "datum": "2026-03-27",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.49,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 61.28,
+      "tatsaechlich_stueck": 60
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 52.75,
+      "tatsaechlich_stueck": 64
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 13.96,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 114.39,
+      "tatsaechlich_stueck": 99
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 7.87,
+      "tatsaechlich_stueck": 5
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 37.35,
+      "tatsaechlich_stueck": 43
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 42.37,
+      "tatsaechlich_stueck": 40
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 49.36,
+      "tatsaechlich_stueck": 57
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 31.26,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 35.86,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 15.67,
+      "tatsaechlich_stueck": 22
+    },
+    {
+      "datum": "2026-03-28",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 15.3,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 51.34,
+      "tatsaechlich_stueck": 58
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 36.77,
+      "tatsaechlich_stueck": 32
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 7.9,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 67.2,
+      "tatsaechlich_stueck": 94
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 6.93,
+      "tatsaechlich_stueck": 6
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.46,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 32.85,
+      "tatsaechlich_stueck": 38
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 35.19,
+      "tatsaechlich_stueck": 29
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 22.56,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 27.18,
+      "tatsaechlich_stueck": 27
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 17.05,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-29",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 16.44,
+      "tatsaechlich_stueck": 13
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 63.08,
+      "tatsaechlich_stueck": 67
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 46.81,
+      "tatsaechlich_stueck": 31
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 14.16,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 93.25,
+      "tatsaechlich_stueck": 100
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 13.21,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 36.08,
+      "tatsaechlich_stueck": 39
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 41.82,
+      "tatsaechlich_stueck": 41
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 47.44,
+      "tatsaechlich_stueck": 46
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 27.77,
+      "tatsaechlich_stueck": 36
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 28.27,
+      "tatsaechlich_stueck": 23
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 13.08,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-30",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 13.95,
+      "tatsaechlich_stueck": 8
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-001",
+      "prognose_stueck": 62.48,
+      "tatsaechlich_stueck": 75
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-002",
+      "prognose_stueck": 45.62,
+      "tatsaechlich_stueck": 48
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-003",
+      "prognose_stueck": 12.47,
+      "tatsaechlich_stueck": 11
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-004",
+      "prognose_stueck": 97.46,
+      "tatsaechlich_stueck": 70
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-005",
+      "prognose_stueck": 11.38,
+      "tatsaechlich_stueck": 16
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-006",
+      "prognose_stueck": 30.24,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-007",
+      "prognose_stueck": 38.53,
+      "tatsaechlich_stueck": 44
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-008",
+      "prognose_stueck": 51.51,
+      "tatsaechlich_stueck": 42
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-009",
+      "prognose_stueck": 32.56,
+      "tatsaechlich_stueck": 28
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-010",
+      "prognose_stueck": 30.36,
+      "tatsaechlich_stueck": 34
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-011",
+      "prognose_stueck": 20.49,
+      "tatsaechlich_stueck": 15
+    },
+    {
+      "datum": "2026-03-31",
+      "produkt_id": "ART-012",
+      "prognose_stueck": 11.72,
+      "tatsaechlich_stueck": 23
+    }
+  ]
+}
